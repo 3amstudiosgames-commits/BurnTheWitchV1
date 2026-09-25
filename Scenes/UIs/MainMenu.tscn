@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://dyuykpju2rlyj"]
 
-[ext_resource type="Script" path="res://Scripts/UIs/MainMenu.gd" id="1_11bdm"]
-[ext_resource type="Script" path="res://Scripts/UIs/AudioControl.gd" id="3_43yvv"]
-[ext_resource type="Script" path="res://Scripts/UIs/FullScreenControl.gd" id="4_a0raa"]
+[ext_resource type="Script" uid="uid://b6gra4g4ut2qd" path="res://Scripts/UIs/MainMenu.gd" id="1_11bdm"]
+[ext_resource type="Script" uid="uid://b3q8kqy536dms" path="res://Scripts/UIs/AudioControl.gd" id="3_43yvv"]
+[ext_resource type="Script" uid="uid://dvevfdapqs376" path="res://Scripts/UIs/FullScreenControl.gd" id="4_a0raa"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11bdm"]
 bg_color = Color(0.979495, 0.81776, 0.887051, 1)
@@ -88,9 +88,9 @@ theme_override_constants/separation = 8
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
 theme_override_colors/font_color = Color(0.329634, 0.082265, 0.0797426, 1)
+theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
+theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_jx3br")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ftdnr")
@@ -102,9 +102,9 @@ text = "Start Game"
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
 theme_override_colors/font_color = Color(0.329634, 0.082265, 0.0797426, 1)
+theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
+theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_jx3br")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ftdnr")
@@ -117,9 +117,9 @@ text = "Settings
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
 theme_override_colors/font_color = Color(0.329634, 0.082265, 0.0797426, 1)
+theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
+theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_jx3br")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ftdnr")
@@ -212,9 +212,9 @@ grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
 theme_override_colors/font_color = Color(0.329634, 0.082265, 0.0797426, 1)
+theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
+theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_jx3br")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ftdnr")
@@ -270,9 +270,9 @@ audio_bus_name = "SFX"
 [node name="FullscreenControl" type="CheckButton" parent="Settings"]
 layout_mode = 0
 offset_left = 171.0
-offset_top = 131.0
+offset_top = 175.0
 offset_right = 349.0
-offset_bottom = 258.0
+offset_bottom = 206.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_a0raa")
 text = "FullScreen
 "
