@@ -78,6 +78,7 @@ thickness = 19
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ug2m"]
 
 [node name="PauseMenu" type="Control"]
+process_mode = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -87,6 +88,7 @@ grow_vertical = 2
 script = ExtResource("1_fy2bd")
 
 [node name="Label" type="Label" parent="."]
+process_mode = 2
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -105,10 +107,12 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 2
 stream = ExtResource("1_cg3cv")
 autoplay = true
 
 [node name="Main Buttons" type="VBoxContainer" parent="."]
+process_mode = 2
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -125,6 +129,7 @@ grow_vertical = 2
 theme_override_constants/separation = 8
 
 [node name="ResumeGame" type="Button" parent="Main Buttons"]
+process_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
@@ -139,6 +144,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_upcsi")
 text = "Resume"
 
 [node name="Settings" type="Button" parent="Main Buttons"]
+process_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
@@ -154,6 +160,7 @@ text = "Settings
 "
 
 [node name="Quit" type="Button" parent="Main Buttons"]
+process_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
@@ -168,6 +175,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_upcsi")
 text = "Quit"
 
 [node name="Settings" type="Panel" parent="."]
+process_mode = 2
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -182,6 +190,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="SettingsLabel" type="Label" parent="Settings"]
+process_mode = 2
 visible = false
 layout_mode = 1
 anchors_preset = 10
@@ -194,6 +203,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MusicLabel" type="Label" parent="Settings"]
+process_mode = 2
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -208,6 +218,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SFX label" type="Label" parent="Settings"]
+process_mode = 2
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -222,6 +233,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Back" type="Button" parent="Settings"]
+process_mode = 2
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.178161
@@ -244,6 +256,7 @@ text = "Back"
 metadata/_edit_use_anchors_ = true
 
 [node name="AudioControl" type="HSlider" parent="Settings"]
+process_mode = 2
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -266,6 +279,7 @@ script = ExtResource("1_3un8k")
 audio_bus_name = "Music"
 
 [node name="SFXControl" type="HSlider" parent="Settings"]
+process_mode = 2
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -288,6 +302,7 @@ script = ExtResource("1_3un8k")
 audio_bus_name = "SFX"
 
 [node name="FullscreenControl" type="CheckButton" parent="Settings"]
+process_mode = 2
 layout_mode = 0
 offset_left = 173.0
 offset_top = 171.0
