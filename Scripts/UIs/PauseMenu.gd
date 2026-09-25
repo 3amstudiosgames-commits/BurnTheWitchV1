@@ -9,11 +9,13 @@ func _ready() -> void:
 	main_buttons.visible = false
 	settings.visible = false
 	GamePausedLabel.visible = false
+	get_tree().paused = false
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Escape"):
 			main_buttons.visible = true
 			GamePausedLabel.visible = true
+			get_tree().paused = true
 
 func _on_resume_game_pressed() -> void:
 	print("Resume game")
