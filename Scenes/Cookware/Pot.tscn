@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwacipi1646lq"]
+
+[ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="1_30psa"]
+[ext_resource type="Script" path="res://Scripts/Cookware/inside_pot.gd" id="2_6ejhd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hoys4"]
+size = Vector2(91.5, 466.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_63ct2"]
+size = Vector2(424, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x7wk0"]
+size = Vector2(332, 335)
+
+[node name="Pot" type="StaticBody2D"]
+
+[node name="Pot_Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_30psa")
+region_enabled = true
+region_rect = Rect2(2013.63, 524.75, 587.25, 536.625)
+
+[node name="Side_R" type="CollisionShape2D" parent="."]
+position = Vector2(219.25, -17.25)
+shape = SubResource("RectangleShape2D_hoys4")
+
+[node name="Side_B" type="CollisionShape2D" parent="."]
+position = Vector2(-15, 192)
+shape = SubResource("RectangleShape2D_63ct2")
+
+[node name="Side_L" type="CollisionShape2D" parent="."]
+position = Vector2(-208, -19)
+shape = SubResource("RectangleShape2D_hoys4")
+
+[node name="Inside_Pot" type="Area2D" parent="."]
+script = ExtResource("2_6ejhd")
+
+[node name="Inside" type="CollisionShape2D" parent="Inside_Pot"]
+position = Vector2(6, -0.5)
+shape = SubResource("RectangleShape2D_x7wk0")
+debug_color = Color(0.920389, 0.259906, 0.281996, 0.42)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true

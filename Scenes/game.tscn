@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3 uid="uid://1gncrb8qqr40"]
+
+[ext_resource type="PackedScene" uid="uid://bfbwvdvjduf7k" path="res://Scenes/Foods/apple_ingredient.tscn" id="2_lx5s4"]
+[ext_resource type="PackedScene" uid="uid://1r8mgspmcv2t" path="res://Scenes/Foods/milk_ingredient.tscn" id="2_vxq55"]
+[ext_resource type="PackedScene" uid="uid://l8vuyx8y6t18" path="res://Scenes/Foods/carrot_ingredient.tscn" id="5_pc4w8"]
+[ext_resource type="PackedScene" uid="uid://41bcqtsb28kt" path="res://Scenes/UIs/pause_menu.tscn" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://l5es74krredl" path="res://Scenes/Foods/bluebery_ingredient.tscn" id="6_l4dy0"]
+[ext_resource type="PackedScene" uid="uid://dwacipi1646lq" path="res://Scenes/Cookware/Pot.tscn" id="6_oqhix"]
+[ext_resource type="PackedScene" uid="uid://bvmr2t23ts1q3" path="res://Scenes/UIs/pop_up_recipe.tscn" id="7_5hnu0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m01v1"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Table" type="StaticBody2D" parent="."]
+position = Vector2(576, 616)
+scale = Vector2(57.56, 2.28)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Table"]
+shape = SubResource("RectangleShape2D_m01v1")
+
+[node name="Shelf1" type="StaticBody2D" parent="."]
+position = Vector2(988, 274)
+scale = Vector2(13.478, 0.533874)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf1"]
+shape = SubResource("RectangleShape2D_m01v1")
+
+[node name="Shelf2" type="StaticBody2D" parent="."]
+position = Vector2(174, 265)
+scale = Vector2(13.478, 0.533874)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf2"]
+shape = SubResource("RectangleShape2D_m01v1")
+
+[node name="AppleIngredient" parent="." instance=ExtResource("2_lx5s4")]
+position = Vector2(265, 208)
+
+[node name="MilkIngredient" parent="." instance=ExtResource("2_vxq55")]
+position = Vector2(1065, 203)
+
+[node name="CarrotIngredient" parent="." instance=ExtResource("5_pc4w8")]
+position = Vector2(981, 193)
+
+[node name="BluberryIngredient" parent="." instance=ExtResource("6_l4dy0")]
+position = Vector2(211, 236)
+gravity_scale = 2.38
+
+[node name="PauseMenu" parent="." instance=ExtResource("5_wowpa")]
+visible = false
+offset_left = 583.0
+offset_top = 338.0
+offset_right = 583.0
+offset_bottom = 338.0
+size_flags_horizontal = 4
+
+[node name="Pot" parent="." instance=ExtResource("6_oqhix")]
+position = Vector2(562, 506)
+scale = Vector2(0.40457, 0.40457)
+
+[node name="MilkIngredient2" parent="." instance=ExtResource("2_vxq55")]
+position = Vector2(909, 216)
+
+[node name="PopUpRecipe" parent="." instance=ExtResource("7_5hnu0")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 573.0
+offset_top = 285.0
+offset_right = 573.0
+offset_bottom = 285.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
