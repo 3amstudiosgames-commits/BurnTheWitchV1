@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://byx8vaauam443"]
+
+[ext_resource type="Script" path="res://Scripts/Foods/herbs_ingredient.gd" id="1_vd7no"]
+[ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_b8muo"]
+
+[node name="MilkIngredient" type="RigidBody2D" groups=["Ingredients"]]
+gravity_scale = 5.505
+continuous_cd = 1
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_vd7no")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.279097, 0.279097)
+texture = ExtResource("2_b8muo")
+region_enabled = true
+region_rect = Rect2(1091.02, 591.275, 215.454, 415.68)
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -23.0
+offset_top = -29.0
+offset_right = -15.0
+offset_bottom = -16.0
+scale = Vector2(4.9723, 5.12871)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-2, 57, -12, 52, -15, 42, -14, 21, -28, 12, -16, -5, 0, -18, -1, -33, 12, -33, 13, -17, 28, 4, 24, 11, 31, 29, 16, 48)
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

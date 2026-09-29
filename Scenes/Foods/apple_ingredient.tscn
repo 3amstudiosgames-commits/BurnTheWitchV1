@@ -3,11 +3,14 @@
 [ext_resource type="Script" path="res://Scripts/Foods/apple_ingredient.gd" id="1_s1h0e"]
 [ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_y0wre"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4hh4t"]
-size = Vector2(1680, 986.935)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8uvln"]
 
 [node name="AppleIngredient" type="RigidBody2D" groups=["Ingredients"]]
+mass = 5.0
 gravity_scale = 5.505
+continuous_cd = 1
+contact_monitor = true
+max_contacts_reported = 4
 script = ExtResource("1_s1h0e")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -17,9 +20,9 @@ region_enabled = true
 region_rect = Rect2(1848.97, 915.611, 197.391, 201.489)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, 0)
-scale = Vector2(0.025, 0.05)
-shape = SubResource("RectangleShape2D_4hh4t")
+position = Vector2(-3, 4)
+scale = Vector2(2.065, 1.41)
+shape = SubResource("CapsuleShape2D_8uvln")
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
