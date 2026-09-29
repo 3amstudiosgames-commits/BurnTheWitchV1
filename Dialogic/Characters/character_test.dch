@@ -1,0 +1,58 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0.939453, 0.0532112, 0.0532112, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "text_bubble_style",
+"suffix": ""
+},
+&"default_portrait": "customer_neutral",
+&"description": "",
+&"display_name": "Character Test",
+&"mirror": false,
+&"nicknames": ["test"],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"customer_angry": {
+"export_overrides": {
+"image": "\"res://Assets/Customers/costumer_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"customer_frustrated": {
+"export_overrides": {
+"image": "\"res://Assets/Customers/costumer_frustrated.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"customer_happy": {
+"export_overrides": {
+"image": "\"res://Assets/Customers/costumer_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"customer_neutral": {
+"export_overrides": {
+"image": "\"res://Assets/Customers/costumer_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

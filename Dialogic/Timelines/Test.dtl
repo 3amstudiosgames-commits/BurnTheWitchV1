@@ -1,1 +1,3 @@
-join  center
+character_test (customer_happy): hey guys whats up
+[style name="visual_novel_style"]
+join character_test center [animation="Bounce Out"]
