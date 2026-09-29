@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cvsvbgwa367x7"]
+[gd_scene load_steps=2 format=3 uid="uid://cvsvbgwa367x7"]
+
+[ext_resource type="Texture2D" uid="uid://0o0oqtvqxj82" path="res://icon.svg" id="1_og7og"]
 
 [node name="RecipesMenu" type="Control"]
 layout_mode = 3
@@ -7,3 +9,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_og7og")
+
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "???"

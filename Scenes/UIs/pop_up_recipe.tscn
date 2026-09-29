@@ -1,14 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://bvmr2t23ts1q3"]
+[gd_scene load_steps=3 format=3 uid="uid://bvmr2t23ts1q3"]
 
+[ext_resource type="Script" path="res://Scripts/UIs/pop_up_recipe.gd" id="1_56p3v"]
 [ext_resource type="Texture2D" uid="uid://0o0oqtvqxj82" path="res://icon.svg" id="1_64ssj"]
 
 [node name="PopUpRecipe" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_56p3v")
 
 [node name="Recipe" type="TextureRect" parent="."]
 layout_mode = 1
@@ -39,3 +43,13 @@ offset_bottom = 115.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Continue"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = -64.0
+offset_top = -108.0
+offset_right = 56.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
