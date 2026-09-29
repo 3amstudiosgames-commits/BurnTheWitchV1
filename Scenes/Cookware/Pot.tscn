@@ -7,7 +7,7 @@
 size = Vector2(91.5, 466.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_63ct2"]
-size = Vector2(424, 48)
+size = Vector2(352, 48)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x7wk0"]
 size = Vector2(332, 335)
@@ -41,3 +41,17 @@ debug_color = Color(0.920389, 0.259906, 0.281996, 0.42)
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = -56.0
+offset_top = 201.0
+offset_right = 57.0
+offset_bottom = 232.0
+text = "Start Cooking"
+
+[node name="Side_B2" type="CollisionShape2D" parent="."]
+position = Vector2(0, -224)
+shape = SubResource("RectangleShape2D_63ct2")
+disabled = true
+
+[connection signal="pressed" from="Button" to="Inside_Pot" method="_on_button_pressed"]
