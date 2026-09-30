@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cx0cn502uvolg"]
+
+[ext_resource type="Script" uid="uid://dnm47c0n0ge2m" path="res://Dialogic/Text Bubble Script/charatcer_test_greeting.gd" id="1_y6itq"]
+[ext_resource type="Texture2D" uid="uid://dmvyjmohsm1qq" path="res://Assets/Customers/costumer_neutral.png" id="2_1dsap"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u15vf"]
+size = Vector2(77.25, 137.25)
+
+[node name="CustomerBase" type="Node2D" unique_id=1801528613]
+script = ExtResource("1_y6itq")
+
+[node name="customer" type="CharacterBody2D" parent="." unique_id=575369635]
+position = Vector2(588, -183)
+
+[node name="Sprite2D" type="Sprite2D" parent="customer" unique_id=1180585492]
+unique_name_in_owner = true
+position = Vector2(4.000092, 24.000061)
+scale = Vector2(0.0546667, 0.0546667)
+texture = ExtResource("2_1dsap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="customer" unique_id=1830168289]
+unique_name_in_owner = true
+position = Vector2(-0.99993896, 38.00006)
+shape = SubResource("RectangleShape2D_u15vf")
+
+[node name="InMarker2D" type="Marker2D" parent="customer" unique_id=644944576]
+unique_name_in_owner = true
+position = Vector2(11, 346)
+
+[node name="OutMarker2D" type="Marker2D" parent="customer" unique_id=552366033]
+unique_name_in_owner = true
+position = Vector2(32, 967)
+
+[node name="SpeechBubbleMarker2D" type="Marker2D" parent="customer" unique_id=491153965]
+unique_name_in_owner = true
+position = Vector2(48, 324)
