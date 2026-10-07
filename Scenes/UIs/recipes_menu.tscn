@@ -1,24 +1,263 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvsvbgwa367x7"]
+[gd_scene format=3 uid="uid://cvsvbgwa367x7"]
 
-[ext_resource type="Texture2D" uid="uid://0o0oqtvqxj82" path="res://icon.svg" id="1_og7og"]
+[ext_resource type="Texture2D" uid="uid://dj57y3116o2mt" path="res://icon.svg" id="1_og7og"]
+[ext_resource type="Script" uid="uid://bpdmjy6sp5gtk" path="res://Scripts/UIs/recipes_menu.gd" id="1_xu8s2"]
 
-[node name="RecipesMenu" type="Control"]
+[node name="RecipesMenu" type="Control" unique_id=573677174]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xu8s2")
 
-[node name="GridContainer" type="GridContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureButton" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
+[node name="Button" type="TextureButton" parent="." unique_id=1737285899]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.012
+anchor_right = 0.014
+anchor_bottom = 0.012
+offset_left = -0.12800026
+offset_top = 0.22399998
+offset_right = 68.872
+offset_bottom = 42.224
+scale = Vector2(0.5847916, 0.5847916)
 texture_normal = ExtResource("1_og7og")
 
-[node name="Label" type="Label" parent="GridContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1318255489]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Recipe" type="GridContainer" parent="ScrollContainer" unique_id=437493385]
 layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+offset_transform_enabled = true
+theme_override_constants/h_separation = 200
+theme_override_constants/v_separation = 30
+columns = 3
+
+[node name="MilkShakeBlueberry" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1971119267]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="MilkShakeStrawberry" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1585337797]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="MilkShakeApple" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1109467565]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="MilkShakeBlueberryBlueberryLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=150876492]
+layout_mode = 2
+size_flags_horizontal = 4
 text = "???"
+horizontal_alignment = 1
+
+[node name="MilkShakeStrawberryLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1821474431]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="MilkShakeAppleLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=2011698347]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="MilkShakeBloodshoteye2" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=515250677]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="MilkShakeBasic" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1112734577]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="MilkShakeBisicuitFrappe" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=184196627]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="MilkShakeBloodshoteye3" type="Label" parent="ScrollContainer/Recipe" unique_id=2061445371]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="MilkShakeBasicLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=961893315]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="MilkShakeBicuitFrappeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=75318534]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="CarrotCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=746810272]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="BloodyCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1779568419]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="CrystalCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=964385095]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="CarrotCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=636624081]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="BloodyCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1193596076]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="CrytalCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1727642542]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="FruitCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=2015864531]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="BasicCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=341330907]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="RainbowCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1009910561]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="FruitCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1497041644]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="BasicCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1427039427]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="CrystalCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1159903191]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="TofuPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=2127044807]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="BloodyPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1539075735]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="BasicPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=318042541]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="TofuPuddingLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=423504639]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="BloodyPudding2" type="Label" parent="ScrollContainer/Recipe" unique_id=1552712772]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="BasicPuddingLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1783465000]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="BadCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1148905989]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="BadMilkShake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1005029086]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="TextureButton18" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=564892062]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_og7og")
+
+[node name="BadCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=206747627]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="BadMilkShakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=262088885]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[node name="BadPuddingLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1266973411]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "???"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

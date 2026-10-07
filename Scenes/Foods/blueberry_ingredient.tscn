@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://l5es74krredl"]
+
+[ext_resource type="Script" uid="uid://t3i6q11krj52" path="res://Scripts/Foods/blueberry_ingredient.gd" id="1_ddf4u"]
+[ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="1_to3em"]
+
+[node name="BluberryIngredient" type="RigidBody2D" unique_id=594391567 groups=["Ingredients"]]
+script = ExtResource("1_ddf4u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1382699475]
+scale = Vector2(0.279097, 0.279097)
+texture = ExtResource("1_to3em")
+region_enabled = true
+region_rect = Rect2(2115.2, 1145.34, 131.522, 127.007)
+
+[node name="Button" type="Button" parent="." unique_id=1694694360]
+modulate = Color(1, 1, 1, 0)
+offset_left = -17.0
+offset_top = -18.0
+offset_right = -9.0
+offset_bottom = -10.0
+scale = Vector2(4.12418, 4.25391)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=538574024]
+polygon = PackedVector2Array(-1, -14, -7, -17, -14, -13, -17, -4, -11, 2, -5, 3, -2, 9, 1, 15, 10, 16, 16, 10, 14, 2, 13, -3, 5, -7)
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

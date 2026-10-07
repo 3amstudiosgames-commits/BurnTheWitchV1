@@ -1,4 +1,1 @@
-character_test (customer_happy): hey guys whats up
-character_test (customer_neutral): Can I please get a milkshake?
-[wait_input]
-[signal arg="food_wanted"]
+join  center

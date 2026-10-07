@@ -1,11 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfbwvdvjduf7k"]
+[gd_scene format=3 uid="uid://bfbwvdvjduf7k"]
 
-[ext_resource type="Script" path="res://Scripts/Foods/apple_ingredient.gd" id="1_s1h0e"]
-[ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_y0wre"]
+[ext_resource type="Script" uid="uid://c2pw8xik8cqay" path="res://Scripts/Foods/apple_ingredient.gd" id="1_s1h0e"]
+[ext_resource type="Texture2D" uid="uid://cwraoj27pejsy" path="res://Assets/Foods/manyapples.png" id="2_66bna"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8uvln"]
-
-[node name="AppleIngredient" type="RigidBody2D" groups=["Ingredients"]]
+[node name="AppleIngredient" type="RigidBody2D" unique_id=725578341 groups=["Ingredients"]]
 mass = 5.0
 gravity_scale = 5.505
 continuous_cd = 1
@@ -13,24 +11,25 @@ contact_monitor = true
 max_contacts_reported = 4
 script = ExtResource("1_s1h0e")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.279097, 0.279097)
-texture = ExtResource("2_y0wre")
-region_enabled = true
-region_rect = Rect2(1848.97, 915.611, 197.391, 201.489)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=630760412]
 position = Vector2(-3, 4)
-scale = Vector2(2.065, 1.41)
-shape = SubResource("CapsuleShape2D_8uvln")
+scale = Vector2(0.08152886, 0.08152886)
+texture = ExtResource("2_66bna")
+region_enabled = true
+region_rect = Rect2(782, 846, 591, 574)
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=982790656]
 modulate = Color(1, 1, 1, 0)
 offset_left = -23.0
 offset_top = -17.0
 offset_right = -15.0
 offset_bottom = -9.0
-scale = Vector2(4.9723, 5.12871)
+scale = Vector2(5.491187, 5.6639194)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1867267819]
+position = Vector2(-4, 7.0000005)
+scale = Vector2(1.9662017, 1.9662017)
+polygon = PackedVector2Array(0.5007745, 9.013941, -3.5054216, 9.013941, -9.013941, 4.006196, -9.514715, -5.007745, -5.5085196, -8.513166, 0, -7.511617, 6.5100684, -8.513166, 11.017038, -5.007745, 9.514715, 4.006196, 5.007745, 9.514715)
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

@@ -10,5 +10,9 @@ func _ready() -> void:
 		
 func display_recipe(food_name: String) -> void:
 	
-	label.text = "You found:" + food_name
+	label.text = food_name
+	show()
+func display_recipe_no_recipe(food_name: String) -> void:
+	
+	label.text = food_name
 	show()

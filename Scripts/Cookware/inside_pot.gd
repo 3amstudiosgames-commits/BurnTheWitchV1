@@ -7,11 +7,25 @@ var ingredients_in_pot: Array=[]
 var is_cooking:bool = false
 
 const RECIPES: Dictionary={
-["CarrotIngredient","MilkIngredient"]:"Carrot Milk", 
-["AppleIngredient","CarrotIngredient"]: "Carrot Apple salad",
-["AppleIngredient","BlueberryIngredient"]: "Wild Shake",
-["AppleIngredient","MilkIngredient"]: "Apple Milk",
-["AppleIngredient","MilkIngredient","BlueberryIngredient"]: "Mega shake"
+	
+#All Milkshakes (6)
+["BlueberryIngredient","MilkIngredient"]: "Blueberry Milkshake",
+["straberryIngredient","MilkIngredient"]:"Strawberry Milkshake", 
+["AppleIngredient","MilkIngredient"]: "Apple Milkshake",
+["BloodyIngredient","EyeIngredient","MilkIngredient"]: "Bloodshot eye Milkshake",
+["SugarIngredient","MilkIngredient"]: "Basic Milkshake",
+["DogTreatIngredient","MilkIngredient"]: "Biscuit Milkshake",
+#All Cakes (6)
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CarrotIngredient"]: "Carrot Cake",
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","BloodVitalIngredient"]: "Bloody Cake",
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Crystal Cake",
+#["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Fruit Cake",
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","RainbowIngredient"]: "Rainbow Cake",
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient"]: "Basic Cake",
+
+#All Puddings (6)
+
+
 }
 
 func _ready() -> void:
@@ -55,6 +69,12 @@ func _on_timer_timeout() -> void:
 		else:
 			pop_up_recipe.show()
 			
+	elif result == "No food":
+		if pop_up_recipe.has_method("display_recipe_no_recipe"):
+			pop_up_recipe.display_recipe("Mess")
+		else:
+			pop_up_recipe.show()
+	
 	ingredients_in_pot.clear()
 	
 func checking_recipe(ingredients: Array) -> String: 

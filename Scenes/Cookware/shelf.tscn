@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d34awfboc723l"]
+
+[ext_resource type="Texture2D" uid="uid://cv02brxcqt4u6" path="res://Assets/Cookware/shelfpot.png" id="1_0p3hn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whp10"]
+size = Vector2(396, 61)
+
+[node name="shelf" type="StaticBody2D" unique_id=1166927236]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=33068137]
+scale = Vector2(0.262213, 0.262213)
+texture = ExtResource("1_0p3hn")
+region_enabled = true
+region_rect = Rect2(12.609436, 40.845947, 1634.1721, 538.2003)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2053739929]
+position = Vector2(-1, -13.5)
+shape = SubResource("RectangleShape2D_whp10")

@@ -1,22 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://1r8mgspmcv2t"]
+[gd_scene format=3 uid="uid://1r8mgspmcv2t"]
 
-[ext_resource type="Script" path="res://Scripts/Foods/milk_ingredient.gd" id="1_eefxm"]
+[ext_resource type="Script" uid="uid://m20f4gix2v3t" path="res://Scripts/Foods/milk_ingredient.gd" id="1_eefxm"]
 [ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_uhn8v"]
 
-[node name="MilkIngredient" type="RigidBody2D" groups=["Ingredients"]]
+[node name="MilkIngredient" type="RigidBody2D" unique_id=1988172377 groups=["Ingredients"]]
 gravity_scale = 5.505
 continuous_cd = 1
 contact_monitor = true
 max_contacts_reported = 4
 script = ExtResource("1_eefxm")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1357457887]
 scale = Vector2(0.279097, 0.279097)
 texture = ExtResource("2_uhn8v")
 region_enabled = true
 region_rect = Rect2(1465.1, 679.6, 189.2, 323.4)
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=351559911]
 modulate = Color(1, 1, 1, 0)
 offset_left = -23.0
 offset_top = -29.0
@@ -24,7 +24,7 @@ offset_right = -15.0
 offset_bottom = -16.0
 scale = Vector2(4.9723, 5.12871)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1782062046]
 polygon = PackedVector2Array(23, 39, -24, 39, -23, -11, -12, -21, -12, -34, -15, -34, -15, -42, 14, -42, 14, -33, 10, -33, 10, -21, 23, -10)
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

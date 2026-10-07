@@ -1,0 +1,8 @@
+res://Scenes/UIs/recipes_menu.tscn
+res://Scripts/Cookware/inside_pot.gd
+res://Scripts/UIs/pop_up_recipe.gd
+res://Scripts/UIs/recipes_menu.gd
+res://Scenes/Cookware/Pot.tscn
+res://Scenes/UIs/pop_up_recipe.tscn
+res://Scripts/UIs/gamecode.gd
+res://Scenes/UIs/main_menu.tscn
