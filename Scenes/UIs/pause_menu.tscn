@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://41bcqtsb28kt"]
 
 [ext_resource type="AudioStream" uid="uid://ddu4wjpy1xrcf" path="res://Assets/Audio/TempMusic_1.wav" id="1_cg3cv"]
-[ext_resource type="Script" uid="uid://c8a7k7bfa60vh" path="res://Scripts/UIs/PauseMenu.gd" id="1_fy2bd"]
+[ext_resource type="Script" uid="uid://dia4puuhf2nrv" path="res://Scripts/UIs/pause_menu.gd" id="1_fy2bd"]
 [ext_resource type="PackedScene" uid="uid://vul4ebsphv0" path="res://Scenes/UIs/settings.tscn" id="3_vcifk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_upcsi"]
