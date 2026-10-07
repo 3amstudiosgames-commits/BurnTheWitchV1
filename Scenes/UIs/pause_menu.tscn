@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://41bcqtsb28kt"]
 
-[ext_resource type="Script" uid="uid://b3q8kqy536dms" path="res://Scripts/UIs/AudioControl.gd" id="1_3un8k"]
 [ext_resource type="AudioStream" uid="uid://ddu4wjpy1xrcf" path="res://Assets/Audio/TempMusic_1.wav" id="1_cg3cv"]
 [ext_resource type="Script" uid="uid://c8a7k7bfa60vh" path="res://Scripts/UIs/PauseMenu.gd" id="1_fy2bd"]
-[ext_resource type="Script" uid="uid://dvevfdapqs376" path="res://Scripts/UIs/FullScreenControl.gd" id="2_cg3cv"]
+[ext_resource type="PackedScene" uid="uid://vul4ebsphv0" path="res://Scenes/UIs/settings.tscn" id="3_vcifk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_upcsi"]
 bg_color = Color(0.999649, 0.993962, 0.995747, 1)
@@ -33,49 +32,6 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3un8k"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fmvbe"]
-bg_color = Color(0.999649, 0.993962, 0.995747, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yxkx6"]
-bg_color = Color(0.479783, 0.0465205, 0.275852, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_prya7"]
-bg_color = Color(0.859166, 0.1821, 0.521592, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_axmsh"]
-
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_4oeak"]
-color = Color(0.830335, 0.830335, 0.830335, 1)
-thickness = 19
-
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_ph12c"]
-color = Color(0.764321, 0, 0.172622, 1)
-thickness = 19
-
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_j8dwf"]
-color = Color(0.764321, 0, 0.172622, 1)
-thickness = 19
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ug2m"]
 
 [node name="PauseMenu" type="Control" unique_id=1733997507]
 process_mode = 3
@@ -110,10 +66,10 @@ vertical_alignment = 1
 process_mode = 2
 stream = ExtResource("1_cg3cv")
 autoplay = true
+bus = &"Music"
 
 [node name="Main Buttons" type="VBoxContainer" parent="." unique_id=1836773216]
 process_mode = 2
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -159,7 +115,22 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_3un8k")
 text = "Settings
 "
 
-[node name="Quit" type="Button" parent="Main Buttons" unique_id=675482898]
+[node name="ReturnMainMenu" type="Button" parent="Main Buttons" unique_id=675482898]
+process_mode = 2
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.329634, 0.082265, 0.0797426, 1)
+theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
+theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
+theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_upcsi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fy2bd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cg3cv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3un8k")
+text = "Main Menu"
+
+[node name="Quit" type="Button" parent="Main Buttons" unique_id=1758739312]
 process_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
@@ -174,149 +145,18 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_cg3cv")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3un8k")
 text = "Quit"
 
-[node name="Settings" type="Panel" parent="." unique_id=882827028]
-process_mode = 2
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -261.0
-offset_top = -111.0
-offset_right = 261.0
-offset_bottom = 184.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="SettingsLabel" type="Label" parent="Settings" unique_id=1773904059]
-process_mode = 2
+[node name="Settings" parent="." unique_id=1240063776 instance=ExtResource("3_vcifk")]
 visible = false
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 70.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 30
-text = "Settings"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="MusicLabel" type="Label" parent="Settings" unique_id=587344146]
-process_mode = 2
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = -233.0
-offset_top = 56.0
-offset_right = -233.0
-offset_bottom = 126.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 16
-text = "Music"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="SFX label" type="Label" parent="Settings" unique_id=1261103307]
-process_mode = 2
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = -236.0
-offset_top = 107.0
-offset_right = -236.0
-offset_bottom = 177.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 16
-text = "SFX"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Back" type="Button" parent="Settings" unique_id=1164901229]
-process_mode = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.178161
-anchor_top = 0.759322
-anchor_right = 0.829502
-anchor_bottom = 0.966102
-grow_horizontal = 2
-grow_vertical = 0
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.329634, 0.082265, 0.0797426, 1)
-theme_override_colors/font_focus_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_pressed_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_colors/font_hover_color = Color(0.329412, 0.0823529, 0.0784314, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_fmvbe")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_yxkx6")
-theme_override_styles/hover = SubResource("StyleBoxFlat_prya7")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_axmsh")
-text = "Back"
-metadata/_edit_use_anchors_ = true
-
-[node name="AudioControl" type="HSlider" parent="Settings" unique_id=1434077745]
-process_mode = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.312
-anchor_right = 0.5
-anchor_bottom = 0.312
-offset_left = -204.0
-offset_top = -19.04
-offset_right = 204.0
-offset_bottom = 18.96
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/slider = SubResource("StyleBoxLine_4oeak")
-theme_override_styles/grabber_area = SubResource("StyleBoxLine_ph12c")
-theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_j8dwf")
-max_value = 1.0
-step = 0.05
-value = 1.0
-script = ExtResource("1_3un8k")
-audio_bus_name = "Music"
-
-[node name="SFXControl" type="HSlider" parent="Settings" unique_id=1654116346]
-process_mode = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.312
-anchor_right = 0.5
-anchor_bottom = 0.312
-offset_left = -204.0
-offset_top = 32.96
-offset_right = 204.0
-offset_bottom = 70.96
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/slider = SubResource("StyleBoxLine_4oeak")
-theme_override_styles/grabber_area = SubResource("StyleBoxLine_ph12c")
-theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_j8dwf")
-max_value = 1.0
-step = 0.05
-value = 1.0
-script = ExtResource("1_3un8k")
-audio_bus_name = "SFX"
-
-[node name="FullscreenControl" type="CheckButton" parent="Settings" unique_id=375734656]
-process_mode = 2
-layout_mode = 0
-offset_left = 173.0
-offset_top = 171.0
-offset_right = 351.0
-offset_bottom = 202.0
-theme_override_styles/focus = SubResource("StyleBoxEmpty_4ug2m")
-text = "FullScreen
-"
-script = ExtResource("2_cg3cv")
+offset_left = -258.0
+offset_top = -108.0
+offset_right = 264.0
+offset_bottom = 187.0
 
 [connection signal="pressed" from="Main Buttons/ResumeGame" to="." method="_on_resume_game_pressed"]
 [connection signal="pressed" from="Main Buttons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Main Buttons/ReturnMainMenu" to="." method="_on_return_main_menu_pressed"]
 [connection signal="pressed" from="Main Buttons/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Settings/Back" to="." method="_on_back_settings_pressed"]
-[connection signal="value_changed" from="Settings/AudioControl" to="Settings/AudioControl" method="_on_value_changed"]
-[connection signal="value_changed" from="Settings/SFXControl" to="Settings/SFXControl" method="_on_value_changed"]
-[connection signal="toggled" from="Settings/FullscreenControl" to="Settings/FullscreenControl" method="_on_toggled"]
+
+[editable path="Settings"]
