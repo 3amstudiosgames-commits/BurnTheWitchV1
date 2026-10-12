@@ -29,11 +29,10 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 directories/dch_directory={
 "CharacterTest": "res://Dialogic/Characters/CharacterTest.dch",
-"character_test": "res://BurnTheWitchV1/BurnTheWitchV1/Dialogic/Characters/character_test.dch"
+"Characters/character_test": "res://Dialogic/Characters/character_test.dch"
 }
 directories/dtl_directory={
-"Test": "res://Dialogic/Timelines/Test.dtl",
-"Timelines/Test": "res://BurnTheWitchV1/BurnTheWitchV1/Dialogic/Timelines/Test.dtl"
+"Test": "res://Dialogic/Timelines/Test.dtl"
 }
 layout/style_directory={}
 
@@ -44,7 +43,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
 
 [global_group]
 
