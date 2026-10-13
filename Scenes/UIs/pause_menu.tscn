@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dia4puuhf2nrv" path="res://Scripts/UIs/pause_menu.gd" id="1_fy2bd"]
 [ext_resource type="PackedScene" uid="uid://vul4ebsphv0" path="res://Scenes/UIs/settings.tscn" id="3_vcifk"]
 
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_upcsi"]
 bg_color = Color(0.999649, 0.993962, 0.995747, 1)
 corner_radius_top_left = 16

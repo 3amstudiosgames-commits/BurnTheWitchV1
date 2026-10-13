@@ -16,6 +16,8 @@ var recipes:={
 	"Crystal Cake"= preload("res://Assets/Cookware/Box.png"),
 	"Rainbow Cake"= preload("res://Assets/Cookware/Box.png"),
 	"Basic Cake"=preload("res://Assets/Cookware/Box.png"),
+#Puddings
+
 #Others
 	"Mess"= preload("res://Assets/Cookware/Box.png")
 }

@@ -1,11 +1,3 @@
 res://Scenes/front_counter.tscn
-res://Dialogic/Styles/text_bubble_style.tres
-res://Scenes/UIs/settings.tscn
-res://Scripts/global.gd
-res://Scripts/Cookware/inside_pot.gd
-res://Scripts/Foods/ingredient_code.gd
-res://Scenes/UIs/main_menu.tscn
-res://Scripts/UIs/pop_up_recipe.gd
-res://Scripts/UIs/recipes_menu.gd
-res://Scripts/UIs/pop_up_recipe.gd
-res://Scripts/UIs/recipes_menu.gd
+res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
+res://Scripts/UIs/main_menu.gd

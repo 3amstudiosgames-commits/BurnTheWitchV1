@@ -29,32 +29,18 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
-<<<<<<< HEAD
 "Characters/character_test": "res://Dialogic/Characters/character_test.dch"
 }
 directories/dtl_directory={
-"Test": "res://Dialogic/Timelines/customer_order.dtl",
+"customer_order": "res://Dialogic/Timelines/customer_order.dtl",
 "order_right": "res://Dialogic/Timelines/order_right.dtl",
 "order_wrong": "res://Dialogic/Timelines/order_wrong.dtl"
-=======
-"CharacterTest": "res://Dialogic/Characters/CharacterTest.dch",
-"Characters/character_test": "res://Dialogic/Characters/character_test.dch"
 }
-directories/dtl_directory={
-"Test": "res://Dialogic/Timelines/Test.dtl"
->>>>>>> 5959f37b2de3c121f2debe8647de0a33a41675c7
-}
-layout/style_directory={
-"": "res://Dialogic/Styles/text_bubble_style.tres",
-"text_bubble_style": "res://Dialogic/Styles/text_bubble_style.tres"
-}
-variables={}
-layout/style_list=["res://Dialogic/Styles/text_bubble_style.tres"]
-layout/default_style="res://Dialogic/Styles/text_bubble_style.tres"
+layout/style_directory={}
 
 [display]
 
-window/size/mode=1
+window/size/mode=2
 window/stretch/mode="canvas_items"
 
 [editor_plugins]
