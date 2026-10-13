@@ -1,6 +1,3 @@
-res://Scenes/UIs/recipes_menu.tscn
+res://Scenes/UIs/main_menu.tscn
 res://Scripts/UIs/pop_up_recipe.gd
-res://Scripts/UIs/pause_menu.gd
-res://Scenes/UIs/pop_up_recipe.tscn
-res://Scripts/Cookware/inside_pot.gd
 res://Scripts/UIs/recipes_menu.gd
