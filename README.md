@@ -2,7 +2,7 @@
 
 This game is made by [whatwendi](github.com/whatwendi), [Not-Da-Ramen-netsu](https://github.com/Netsu-Codes), and [Xorphic](https://github.com/3amstudiosgames)  
 
-Play or rough DEMO on Itch.IO: 
+Play or rough DEMO on Itch.IO:  https://xorphic.itch.io/burnthewitch   
 (No downloading required!)
 
 Date started:  
