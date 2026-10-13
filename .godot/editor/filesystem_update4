@@ -4,5 +4,8 @@ res://Scenes/UIs/settings.tscn
 res://Scripts/global.gd
 res://Scripts/Cookware/inside_pot.gd
 res://Scripts/Foods/ingredient_code.gd
+res://Scenes/UIs/main_menu.tscn
+res://Scripts/UIs/pop_up_recipe.gd
+res://Scripts/UIs/recipes_menu.gd
 res://Scripts/UIs/pop_up_recipe.gd
 res://Scripts/UIs/recipes_menu.gd

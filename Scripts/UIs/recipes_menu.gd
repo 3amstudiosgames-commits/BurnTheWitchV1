@@ -1,7 +1,7 @@
 extends Control
 
 func new_recipe_found() -> void:
-	#when pop-up activate find a button with the name of food_name and copy texture of pop-up recipe
+	#when pop-up is activate find a button with the name of food_name and copy texture of pop-up recipe
 	pass
 
 
