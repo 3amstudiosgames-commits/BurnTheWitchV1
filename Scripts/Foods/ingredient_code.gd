@@ -8,6 +8,7 @@ extends RigidBody2D
 var dragging = false
 var offset = Vector2.ZERO
 
+		
 func _physics_process(delta):
 	if dragging:
 		var target_position = get_global_mouse_position() - offset
@@ -26,5 +27,3 @@ func _on_button_button_down() -> void:
 
 func _on_button_button_up() -> void:
 	dragging = false
-
-	

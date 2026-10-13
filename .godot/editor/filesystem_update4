@@ -1,2 +1,8 @@
 res://Scenes/front_counter.tscn
 res://Dialogic/Styles/text_bubble_style.tres
+res://Scenes/UIs/settings.tscn
+res://Scripts/global.gd
+res://Scripts/Cookware/inside_pot.gd
+res://Scripts/Foods/ingredient_code.gd
+res://Scripts/UIs/pop_up_recipe.gd
+res://Scripts/UIs/recipes_menu.gd

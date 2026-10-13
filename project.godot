@@ -29,12 +29,20 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
+<<<<<<< HEAD
 "Characters/character_test": "res://Dialogic/Characters/character_test.dch"
 }
 directories/dtl_directory={
 "Test": "res://Dialogic/Timelines/customer_order.dtl",
 "order_right": "res://Dialogic/Timelines/order_right.dtl",
 "order_wrong": "res://Dialogic/Timelines/order_wrong.dtl"
+=======
+"CharacterTest": "res://Dialogic/Characters/CharacterTest.dch",
+"Characters/character_test": "res://Dialogic/Characters/character_test.dch"
+}
+directories/dtl_directory={
+"Test": "res://Dialogic/Timelines/Test.dtl"
+>>>>>>> 5959f37b2de3c121f2debe8647de0a33a41675c7
 }
 layout/style_directory={
 "": "res://Dialogic/Styles/text_bubble_style.tres",
