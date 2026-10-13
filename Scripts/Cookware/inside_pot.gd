@@ -19,9 +19,8 @@ const RECIPES: Dictionary={
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CarrotIngredient"]: "Carrot Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","BloodVitalIngredient"]: "Bloody Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Crystal Cake",
-#["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Fruit Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","RainbowIngredient"]: "Rainbow Cake",
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient"]: "Basic Cake",
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient"]: "Basic Cake"
 
 #All Puddings (6)
 

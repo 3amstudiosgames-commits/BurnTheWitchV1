@@ -1,7 +1,11 @@
 extends Control
 
+func new_recipe_found() -> void:
+	#when pop-up activate find a 
+	pass
+
+
 
 
 func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/game.tscn")
-	print("back to game")
+	print("Scene changed to main scene")
