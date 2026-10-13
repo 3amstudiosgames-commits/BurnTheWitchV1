@@ -46,4 +46,4 @@ func _on_back_settings_pressed() -> void:
 	settings.visible = false
 
 func _on_return_main_menu_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/UIs/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/UIs/main_menu.tscn")

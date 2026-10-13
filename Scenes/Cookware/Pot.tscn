@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dwacipi1646lq"]
 
-[ext_resource type="Texture2D" uid="uid://cv02brxcqt4u6" path="res://Assets/Cookware/shelfpot.png" id="1_yvlse"]
+[ext_resource type="Texture2D" uid="uid://cbiy70as0elba" path="res://Assets/Cookware/shelfpot.png" id="1_yvlse"]
 [ext_resource type="Script" uid="uid://bs5nwbkiwxtum" path="res://Scripts/Cookware/inside_pot.gd" id="2_6ejhd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hoys4"]

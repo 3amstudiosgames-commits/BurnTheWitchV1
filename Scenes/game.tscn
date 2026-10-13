@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://1r8mgspmcv2t" path="res://Scenes/Foods/milk_ingredient.tscn" id="2_vxq55"]
 [ext_resource type="PackedScene" uid="uid://l8vuyx8y6t18" path="res://Scenes/Foods/carrot_ingredient.tscn" id="5_pc4w8"]
 [ext_resource type="PackedScene" uid="uid://41bcqtsb28kt" path="res://Scenes/UIs/pause_menu.tscn" id="5_wowpa"]
-[ext_resource type="PackedScene" uid="uid://l5es74krredl" path="res://Scenes/Foods/blueberry_ingredient.tscn" id="6_l4dy0"]
+[ext_resource type="PackedScene" uid="uid://l5es74krredl" path="res://Scenes/Foods/bluebery_ingredient.tscn" id="6_l4dy0"]
 [ext_resource type="PackedScene" uid="uid://dwacipi1646lq" path="res://Scenes/Cookware/Pot.tscn" id="6_oqhix"]
 [ext_resource type="PackedScene" uid="uid://bvmr2t23ts1q3" path="res://Scenes/UIs/pop_up_recipe.tscn" id="7_5hnu0"]
 [ext_resource type="PackedScene" uid="uid://byx8vaauam443" path="res://Scenes/Foods/herbs_ingredient.tscn" id="8_7msgb"]
