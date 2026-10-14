@@ -12,7 +12,7 @@
 },
 &"default_portrait": "customer_neutral",
 &"description": "",
-&"display_name": "Character Test",
+&"display_name": "test",
 &"mirror": false,
 &"nicknames": ["test"],
 &"offset": Vector2(0, 0),

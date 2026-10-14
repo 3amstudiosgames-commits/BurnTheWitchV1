@@ -1,2 +1,7 @@
-res://Scenes/UIs/main_menu.tscn
+res://Scenes/Customers/customer_base.tscn
+res://Dialogic/Styles/visual_novel_style.tres
 res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
+res://Dialogic/Characters/character_test.dch
+res://Scripts/Customers/charatcer_test_greeting.gd
+res://Dialogic/Styles/text_bubble_style.tres
+res://Dialogic/Timelines/order_right.dtl

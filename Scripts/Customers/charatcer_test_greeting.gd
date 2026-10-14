@@ -13,6 +13,7 @@ var order: Array=["MilkIngredient", "BluberryIngredient"]
 @onready var speech_bubble_marker_2d: Marker2D = %SpeechBubbleMarker2D
 
 
+
 func _ready() -> void:
 	await _in_tween()
 	await _inital_timeline()
@@ -24,8 +25,8 @@ func _inital_timeline():
 	var layout = Dialogic.Styles.load_style("text_bubble_style")
 	var character_resource = load("res://Dialogic/Characters/character_test.dch")
 	layout.register_character(character_resource, speech_bubble_marker_2d)
-	Dialogic.start("Test")
-	
+	Dialogic.start("customer_order")
+ 
 	await Dialogic.timeline_ended
 
 func _in_tween():
