@@ -1,1 +1,2 @@
-Characters/character_test (customer_neutral): hi can i get a milkshake
+Characters/character_test (customer_neutral): hi can i get a {" & a ".join(Global.order)}
+Characters/character_test (customer_happy): thanks
