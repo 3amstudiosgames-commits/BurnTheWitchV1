@@ -15,3 +15,17 @@ position = Vector2(576, 296)
 shape = SubResource("RectangleShape2D_rfn2y")
 
 [node name="CustomerBase" parent="." unique_id=1801528613 instance=ExtResource("4_f001j")]
+
+[node name="Kitchen" type="Button" parent="." unique_id=372756350]
+offset_left = 16.0
+offset_top = 568.0
+offset_right = 168.0
+offset_bottom = 624.0
+text = "Kitchen"
+
+[node name="Menu" type="Button" parent="." unique_id=124575694]
+offset_left = 192.0
+offset_top = 568.0
+offset_right = 256.0
+offset_bottom = 624.0
+text = "Menu"

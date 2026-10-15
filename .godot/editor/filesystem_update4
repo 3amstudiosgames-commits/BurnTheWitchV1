@@ -6,3 +6,5 @@ res://Scripts/Customers/charatcer_test_greeting.gd
 res://Dialogic/Timelines/customer_order.dtl
 res://Scripts/global.gd
 res://Dialogic/Characters/character_test.dch
+res://Scenes/UIs/scene_transition.tscn
+res://Scripts/UIs/scene_transition.gd
