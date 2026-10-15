@@ -11,3 +11,7 @@ res://Scripts/UIs/scene_transition.gd
 res://Scripts/UIs/front_counter.gd
 res://Scenes/UIs/pause_menu.tscn
 res://Scenes/UIs/main_menu.tscn
+res://Scripts/UIs/pause_menu.gd
+res://Scripts/UIs/main_menu.gd
+res://Scenes/game.tscn
+res://Scripts/UIs/gamecode.gd

@@ -25,12 +25,4 @@ offset_right = 168.0
 offset_bottom = 624.0
 text = "Kitchen"
 
-[node name="Menu" type="Button" parent="." unique_id=124575694]
-offset_left = 192.0
-offset_top = 568.0
-offset_right = 256.0
-offset_bottom = 624.0
-text = "Menu"
-
 [connection signal="pressed" from="Kitchen" to="." method="_on_kitchen_button_pressed"]
-[connection signal="pressed" from="Menu" to="." method="_on_menu_button_pressed"]
