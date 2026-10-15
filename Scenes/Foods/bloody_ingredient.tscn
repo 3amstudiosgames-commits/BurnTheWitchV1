@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://l5es74krredl"]
 
-[ext_resource type="Script" uid="uid://t3i6q11krj52" path="res://Scripts/Foods/blueberry_ingredient.gd" id="1_ddf4u"]
-[ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="1_to3em"]
+[ext_resource type="Script" uid="uid://dt0q0c047qqxl" path="res://Scripts/Foods/bloody_ingredient.gd" id="1_k3w0k"]
+[ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_j0cj1"]
 
-[node name="BluberryIngredient" type="RigidBody2D" unique_id=594391567 groups=["Ingredients"]]
-script = ExtResource("1_ddf4u")
+[node name="BloodyIngredient" type="RigidBody2D" unique_id=594391567 groups=["Ingredients"]]
+script = ExtResource("1_k3w0k")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1382699475]
 scale = Vector2(0.279097, 0.279097)
-texture = ExtResource("1_to3em")
+texture = ExtResource("2_j0cj1")
 region_enabled = true
 region_rect = Rect2(2115.2, 1145.34, 131.522, 127.007)
 

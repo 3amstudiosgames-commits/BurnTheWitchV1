@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dwacipi1646lq"]
 
-[ext_resource type="Texture2D" uid="uid://cbiy70as0elba" path="res://Assets/Cookware/shelfpot.png" id="1_yvlse"]
+[ext_resource type="Texture2D" uid="uid://cv02brxcqt4u6" path="res://Assets/Cookware/shelfpot.png" id="1_yvlse"]
 [ext_resource type="Script" uid="uid://bs5nwbkiwxtum" path="res://Scripts/Cookware/inside_pot.gd" id="2_6ejhd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hoys4"]
@@ -11,6 +11,16 @@ size = Vector2(352, 48)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x7wk0"]
 size = Vector2(332, 335)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yvlse"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cd6td"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5h0kl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1lkbb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gajvr"]
 
 [node name="Pot" type="StaticBody2D" unique_id=2053324467]
 
@@ -44,11 +54,17 @@ debug_color = Color(0.920389, 0.259906, 0.281996, 0.42)
 one_shot = true
 
 [node name="Button" type="Button" parent="." unique_id=1689013858]
-offset_left = -56.0
-offset_top = 201.0
-offset_right = 57.0
+offset_left = -256.0
+offset_top = -256.0
+offset_right = 264.0
 offset_bottom = 232.0
-text = "Start Cooking"
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yvlse")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cd6td")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5h0kl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1lkbb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gajvr")
 
 [node name="Side_B2" type="CollisionShape2D" parent="." unique_id=1505320064]
 position = Vector2(0, -224)

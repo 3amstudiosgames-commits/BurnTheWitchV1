@@ -1,13 +1,12 @@
 extends Area2D
 
 @onready var pop_up_recipe: Control = $"../../PopUpRecipe"
-@export var cook_timer: float = 2.0
+@export var cook_timer: float = 1.0
 @onready var timer: Timer = $"../Timer"
 var ingredients_in_pot: Array=[]
 var is_cooking:bool = false
 
 const RECIPES: Dictionary={
-	
 #All Milkshakes (6)
 ["BlueberryIngredient","MilkIngredient"]: "Blueberry Milkshake",
 ["straberryIngredient","MilkIngredient"]:"Strawberry Milkshake", 
@@ -19,8 +18,9 @@ const RECIPES: Dictionary={
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CarrotIngredient"]: "Carrot Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","BloodVitalIngredient"]: "Bloody Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Crystal Cake",
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Fruit Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","RainbowIngredient"]: "Rainbow Cake",
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient"]: "Basic Cake"
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient"]: "Basic Cake",
 
 #All Puddings (6)
 

@@ -1,14 +1,8 @@
 [gd_scene format=3 uid="uid://vul4ebsphv0"]
 
 [ext_resource type="Script" uid="uid://cxmfqnnfwwh3s" path="res://Scripts/UIs/audio_control.gd" id="1_cephn"]
-<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://bx4xivxpal8j4" path="res://Scripts/UIs/sfx_control.gd" id="2_n8wmm"]
 [ext_resource type="Script" uid="uid://fanaksp2xytd" path="res://Scripts/UIs/full_screen_control.gd" id="2_v5pqv"]
-=======
-[ext_resource type="Script" uid="uid://vvv2n85pu714" path="res://Scripts/UIs/sfx_control.gd" id="2_n8wmm"]
-[ext_resource type="Script" uid="uid://fanaksp2xytd" path="res://Scripts/UIs/full_screen_control.gd" id="2_v5pqv"]
-
->>>>>>> 5959f37b2de3c121f2debe8647de0a33a41675c7
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fmvbe"]
 bg_color = Color(0.999649, 0.993962, 0.995747, 1)

@@ -35,13 +35,13 @@ scale = Vector2(0.40457, 0.40457)
 position = Vector2(265, 208)
 
 [node name="MilkIngredient" parent="." unique_id=808890814 instance=ExtResource("2_vxq55")]
-position = Vector2(1065, 203)
+position = Vector2(288, 544)
 
 [node name="CarrotIngredient" parent="." unique_id=852776623 instance=ExtResource("5_pc4w8")]
 position = Vector2(981, 193)
 
 [node name="BluberryIngredient" parent="." unique_id=144077500 instance=ExtResource("6_l4dy0")]
-position = Vector2(210, 216)
+position = Vector2(192, 440)
 gravity_scale = 2.38
 
 [node name="shelf" parent="." unique_id=1166927236 instance=ExtResource("9_h4fw4")]
