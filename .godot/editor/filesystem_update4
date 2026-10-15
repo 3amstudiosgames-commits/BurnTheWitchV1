@@ -8,3 +8,6 @@ res://Scripts/global.gd
 res://Dialogic/Characters/character_test.dch
 res://Scenes/UIs/scene_transition.tscn
 res://Scripts/UIs/scene_transition.gd
+res://Scripts/UIs/front_counter.gd
+res://Scenes/UIs/pause_menu.tscn
+res://Scenes/UIs/main_menu.tscn

@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://b5h8xqh5ax7tx"]
 
+[ext_resource type="Script" uid="uid://b0w3gadjmty3v" path="res://Scripts/UIs/front_counter.gd" id="1_yagsu"]
 [ext_resource type="PackedScene" uid="uid://cx0cn502uvolg" path="res://Scenes/Customers/customer_base.tscn" id="4_f001j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfn2y"]
 size = Vector2(1153, 66)
 
 [node name="front_counter" type="Node2D" unique_id=1019976497]
+script = ExtResource("1_yagsu")
 
 [node name="Counter" type="StaticBody2D" parent="." unique_id=850165918]
 position = Vector2(0, 216)
@@ -29,3 +31,6 @@ offset_top = 568.0
 offset_right = 256.0
 offset_bottom = 624.0
 text = "Menu"
+
+[connection signal="pressed" from="Kitchen" to="." method="_on_kitchen_button_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_button_pressed"]
