@@ -48,3 +48,5 @@ grow_horizontal = 2
 grow_vertical = 2
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
