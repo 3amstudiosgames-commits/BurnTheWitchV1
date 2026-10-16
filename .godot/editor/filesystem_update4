@@ -1,0 +1,5 @@
+res://Dialogic/Characters/character_test.dch
+res://Dialogic/Styles/text_bubble_style.tres
+res://Scenes/UIs/settings.tscn
+res://Scenes/UIs/recipes_menu.tscn
+res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
