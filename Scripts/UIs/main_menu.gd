@@ -14,7 +14,7 @@ func _ready() -> void:
 
 func _on_start_game_pressed() -> void:
 	print("Start Pressed")
-	get_tree().change_scene_to_file("res://Scenes/game.tscn")
+	SceneTransition._transition_to_scene("res://Scenes/game.tscn")
 
 
 func _on_settings_pressed() -> void:

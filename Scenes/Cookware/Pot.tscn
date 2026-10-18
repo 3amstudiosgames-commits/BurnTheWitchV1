@@ -1,7 +1,12 @@
 [gd_scene format=3 uid="uid://dwacipi1646lq"]
 
-[ext_resource type="Texture2D" uid="uid://cv02brxcqt4u6" path="res://Assets/Cookware/shelfpot.png" id="1_yvlse"]
+[ext_resource type="Texture2D" uid="uid://bya346253n4ph" path="res://Assets/Cookware/shelfpot.png" id="1_yvlse"]
 [ext_resource type="Script" uid="uid://bs5nwbkiwxtum" path="res://Scripts/Cookware/inside_pot.gd" id="2_6ejhd"]
+[ext_resource type="Texture2D" uid="uid://bnlvmqeov25jm" path="res://Assets/Animations/FirePotAnimation/Fire1.png" id="3_of5tc"]
+[ext_resource type="Texture2D" uid="uid://bgwhk40bt3qi" path="res://Assets/Animations/FirePotAnimation/Fire2.png" id="4_y1xy8"]
+[ext_resource type="Texture2D" uid="uid://0bcl50rxhl67" path="res://Assets/Animations/FirePotAnimation/Fire3.png" id="5_w7cmd"]
+[ext_resource type="Texture2D" uid="uid://crl82ulcmtv8s" path="res://Assets/Animations/FirePotAnimation/Fire4.png" id="6_onf6k"]
+[ext_resource type="Texture2D" uid="uid://cjcwrtukoplc6" path="res://Assets/Animations/FirePotAnimation/Fire5.png" id="7_a75o0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hoys4"]
 size = Vector2(91.5, 466.5)
@@ -12,15 +17,28 @@ size = Vector2(352, 48)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x7wk0"]
 size = Vector2(332, 335)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yvlse"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cd6td"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5h0kl"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1lkbb"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gajvr"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_whp10"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_of5tc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y1xy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_w7cmd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_onf6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a75o0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Pot" type="StaticBody2D" unique_id=2053324467]
 
@@ -54,21 +72,16 @@ debug_color = Color(0.920389, 0.259906, 0.281996, 0.42)
 one_shot = true
 
 [node name="Button" type="Button" parent="." unique_id=1689013858]
-offset_left = -256.0
-offset_top = -256.0
-offset_right = 264.0
-offset_bottom = 232.0
-theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 0)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_yvlse")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_cd6td")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_5h0kl")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_1lkbb")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_gajvr")
+offset_left = -247.99998
+offset_top = -240.0
+offset_right = -134.99998
+offset_bottom = -209.0
+scale = Vector2(4.1999993, 14.16)
 
-[node name="Side_B2" type="CollisionShape2D" parent="." unique_id=1505320064]
-position = Vector2(0, -224)
-shape = SubResource("RectangleShape2D_63ct2")
-disabled = true
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=89011058]
+position = Vector2(8, -520)
+sprite_frames = SubResource("SpriteFrames_whp10")
+frame = 2
+frame_progress = 0.77199835
 
 [connection signal="pressed" from="Button" to="Inside_Pot" method="_on_button_pressed"]

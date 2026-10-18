@@ -1,26 +1,27 @@
 extends Area2D
 
 @onready var pop_up_recipe: Control = $"../../PopUpRecipe"
-@export var cook_timer: float = 1.0
+@export var cook_timer: float = 2.0
 @onready var timer: Timer = $"../Timer"
 var ingredients_in_pot: Array=[]
 var is_cooking:bool = false
+@onready var animated_sprite_2d: AnimatedSprite2D = $"../AnimatedSprite2D"
 
 const RECIPES: Dictionary={
+	
 #All Milkshakes (6)
 ["BlueberryIngredient","MilkIngredient"]: "Blueberry Milkshake",
 ["straberryIngredient","MilkIngredient"]:"Strawberry Milkshake", 
 ["AppleIngredient","MilkIngredient"]: "Apple Milkshake",
-["BloodyIngredient","EyeIngredient","MilkIngredient"]: "Bloodshot eye Milkshake",
+["BloodyIngredient","EyeIngredient","MilkIngredient"]: "Bloodshot Eye Milkshake",
 ["SugarIngredient","MilkIngredient"]: "Basic Milkshake",
 ["DogTreatIngredient","MilkIngredient"]: "Biscuit Milkshake",
 #All Cakes (6)
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CarrotIngredient"]: "Carrot Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","BloodVitalIngredient"]: "Bloody Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Crystal Cake",
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Fruit Cake",
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","RainbowIngredient"]: "Rainbow Cake",
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient"]: "Basic Cake",
+["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient"]: "Basic Cake"
 
 #All Puddings (6)
 
@@ -31,6 +32,7 @@ func _ready() -> void:
 	body_entered.connect( _on_inside_pot_body_entered) 
 	timer.wait_time=cook_timer
 	timer.timeout.connect(_on_timer_timeout)
+	animated_sprite_2d.hide()
 	
 func _on_inside_pot_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Ingredients") and not is_cooking:
@@ -55,13 +57,14 @@ func start_cooking() -> void:
 	is_cooking = true
 	timer.start()
 	print("Food getting cooked..")
+	animated_sprite_2d.show()
+	animated_sprite_2d.play("default")
 	
 func _on_timer_timeout() -> void:
 	print("Food is ready")
 	is_cooking = false
 	var result: String=checking_recipe(ingredients_in_pot)
 	print("Food: ", result)
-	
 	if result != "No food":
 		if pop_up_recipe.has_method("display_recipe"):
 			pop_up_recipe.display_recipe(result)
@@ -75,6 +78,8 @@ func _on_timer_timeout() -> void:
 			pop_up_recipe.show()
 	
 	ingredients_in_pot.clear()
+	animated_sprite_2d.stop()
+	animated_sprite_2d.hide()
 	
 func checking_recipe(ingredients: Array) -> String: 
 	var sorted_input: Array=ingredients.duplicate()

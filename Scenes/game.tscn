@@ -35,13 +35,13 @@ scale = Vector2(0.40457, 0.40457)
 position = Vector2(265, 208)
 
 [node name="MilkIngredient" parent="." unique_id=808890814 instance=ExtResource("2_vxq55")]
-position = Vector2(288, 544)
+position = Vector2(1065, 203)
 
 [node name="CarrotIngredient" parent="." unique_id=852776623 instance=ExtResource("5_pc4w8")]
 position = Vector2(981, 193)
 
 [node name="BluberryIngredient" parent="." unique_id=144077500 instance=ExtResource("6_l4dy0")]
-position = Vector2(192, 440)
+position = Vector2(210, 216)
 gravity_scale = 2.38
 
 [node name="shelf" parent="." unique_id=1166927236 instance=ExtResource("9_h4fw4")]
@@ -88,4 +88,12 @@ offset_bottom = 146.0
 scale = Vector2(0.6721263, 0.6721263)
 texture_normal = ExtResource("12_rfjv2")
 
+[node name="ToCounterButton" type="Button" parent="." unique_id=5600741]
+offset_left = 24.0
+offset_top = 560.0
+offset_right = 176.0
+offset_bottom = 616.0
+text = "Counter"
+
 [connection signal="pressed" from="RecipeMenuButton" to="." method="_on_recipe_menu_button_pressed"]
+[connection signal="pressed" from="ToCounterButton" to="." method="_on_to_counter_button_pressed"]

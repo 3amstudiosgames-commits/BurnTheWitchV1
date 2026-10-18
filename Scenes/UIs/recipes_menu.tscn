@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dj57y3116o2mt" path="res://icon.svg" id="1_og7og"]
 [ext_resource type="Script" uid="uid://bpdmjy6sp5gtk" path="res://Scripts/UIs/recipes_menu.gd" id="1_xu8s2"]
+[ext_resource type="Theme" uid="uid://dih6fwil5kyxc" path="res://Assets/Themes/recipes_menu_font.tres" id="3_vpm2k"]
 
 [node name="RecipesMenu" type="Control" unique_id=573677174]
 layout_mode = 3
@@ -26,19 +27,22 @@ propagate_maximum_size = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
-theme_override_constants/h_separation = 200
-theme_override_constants/v_separation = 30
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 50)
+theme_override_constants/h_separation = 167
+theme_override_constants/v_separation = 8
 columns = 3
 
 [node name="MilkShakeBlueberry" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1971119267]
-custom_minimum_size = Vector2(128, 128)
-custom_maximum_size = Vector2(128, 128)
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 texture_normal = ExtResource("1_og7og")
 stretch_mode = 0
 
 [node name="MilkShakeStrawberry" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1585337797]
-custom_maximum_size = Vector2(128, 128)
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -46,7 +50,8 @@ texture_normal = ExtResource("1_og7og")
 stretch_mode = 0
 
 [node name="MilkShakeApple" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1109467565]
-custom_maximum_size = Vector2(128, 128)
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -56,106 +61,139 @@ stretch_mode = 0
 [node name="MilkShakeBlueberryLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=150876492]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="MilkShakeStrawberryLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1821474431]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="MilkShakeAppleLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=2011698347]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="MilkShakeBloodshoteye" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=515250677]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="MilkShakeBasic" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1112734577]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="MilkShakeBisicuitFrappe" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=184196627]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="MilkShakeBloodshoteyeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=2061445371]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="MilkShakeBasicLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=961893315]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="MilkShakeBicuitFrappeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=75318534]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="CarrotCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=746810272]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="BloodyCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1779568419]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="CrystalCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=964385095]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="CarrotCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=636624081]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="BloodyCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1193596076]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="CrytalCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1727642542]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="FruitCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=2015864531]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
 
 [node name="BasicCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=341330907]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
 
 [node name="RainbowCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1009910561]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -164,34 +202,43 @@ texture_normal = ExtResource("1_og7og")
 [node name="FruitCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1497041644]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="BasicCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1427039427]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="CrystalCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1159903191]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="TofuPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=2127044807]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
 
 [node name="BloodyPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1539075735]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
 
 [node name="BasicPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=318042541]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -200,34 +247,43 @@ texture_normal = ExtResource("1_og7og")
 [node name="TofuPuddingLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=423504639]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="BloodyPudding2" type="Label" parent="ScrollContainer/Recipe" unique_id=1552712772]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="BasicPuddingLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1783465000]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="BadCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1148905989]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
 
 [node name="BadMilkShake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1005029086]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
 
-[node name="TextureButton18" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=564892062]
+[node name="BadPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=564892062]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -236,18 +292,21 @@ texture_normal = ExtResource("1_og7og")
 [node name="BadCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=206747627]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="BadMilkShakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=262088885]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 
 [node name="BadPuddingLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1266973411]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("3_vpm2k")
 text = "???"
 horizontal_alignment = 1
 

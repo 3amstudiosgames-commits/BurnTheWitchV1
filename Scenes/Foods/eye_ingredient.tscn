@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://l5es74krredl"]
+
+[ext_resource type="Script" uid="uid://k3yfw1t3bgiy" path="res://Scripts/Foods/eye_ingredient.gd" id="1_vc4bw"]
+[ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_7t0ku"]
+
+[node name="EyeIngredient" type="RigidBody2D" unique_id=594391567 groups=["Ingredients"]]
+script = ExtResource("1_vc4bw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1382699475]
+scale = Vector2(0.279097, 0.279097)
+texture = ExtResource("2_7t0ku")
+region_enabled = true
+region_rect = Rect2(576, 80, 256, 392)
+
+[node name="Button" type="Button" parent="." unique_id=1694694360]
+modulate = Color(1, 1, 1, 0)
+offset_left = -17.0
+offset_top = -18.0
+offset_right = -9.0
+offset_bottom = -10.0
+scale = Vector2(4.12418, 4.25391)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1129618081]
+polygon = PackedVector2Array(-11, -28, -34, -14, -33, 15, -20, 38, -1, 53, 20, 36, 32, 15, 34, -11, 11, -27, 11, -52, -12, -52)
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

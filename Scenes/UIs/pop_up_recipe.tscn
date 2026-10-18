@@ -15,6 +15,8 @@ grow_vertical = 2
 script = ExtResource("1_56p3v")
 
 [node name="Recipe" type="TextureRect" parent="." unique_id=24533877]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -32,21 +34,18 @@ expand_mode = 1
 
 [node name="ContinueButton" type="Button" parent="." unique_id=1826580234]
 layout_mode = 1
-offset_left = -40.0
+offset_left = -39.0
 offset_top = 84.0
-offset_right = 39.0
+offset_right = 40.0
 offset_bottom = 115.0
 text = "Continue"
 
 [node name="Label" type="Label" parent="." unique_id=1455135656]
 layout_mode = 1
-offset_left = -64.0
+offset_left = -60.0
 offset_top = -108.0
-offset_right = 56.0
+offset_right = 60.0
 offset_bottom = -85.0
-grow_horizontal = 2
-grow_vertical = 2
 horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]

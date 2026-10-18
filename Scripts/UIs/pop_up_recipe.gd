@@ -9,9 +9,9 @@ extends Control
 
 var recipes:={
 #Milkshakes
-	"Apple Milkshake": preload("res://Assets/Cookware/Box.png"),
-	"Blueberry Milkshake": preload("res://Assets/Cookware/Box.png"),
-	"Bloodshot eye Milkshake": preload("res://Assets/Cookware/Box.png"),
+	"Apple Milkshake": preload("res://Assets/Foods/AppleMilkshake.png"),
+	"Blueberry Milkshake": preload("res://Assets/Foods/BlueberryMilkshake.png"),
+	"Bloodshot Eye Milkshake": preload("res://Assets/Foods/BloodshotEyeMilkshake.png"),
 	"Basic Milkshake": preload("res://Assets/Cookware/Box.png"),
 	"Biscuit Milkshake": preload("res://Assets/Cookware/Box.png"),
 #Cakes
@@ -39,8 +39,6 @@ func display_recipe(food_name: String) -> void:
 		if not EventBus.unlocked_recipes.has(food_name):
 			EventBus.unlocked_recipes.append(food_name)
 		print("food name : ", food_name)
-		
-		
 	show()
 
 	

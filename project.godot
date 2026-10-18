@@ -25,6 +25,7 @@ config/icon="res://icon.svg"
 
 Global="*res://Scripts/global.gd"
 Dialogic="*uid://ds2q0uclmolvu"
+SceneTransition="*uid://dkqqcrjykvvh7"
 EventBus="*uid://b1ludxi0oxbo0"
 
 [dialogic]
@@ -38,12 +39,11 @@ directories/dtl_directory={
 "order_wrong": "res://Dialogic/Timelines/order_wrong.dtl"
 }
 layout/style_directory={
+"": "res://Dialogic/Styles/text_bubble_style.tres",
 "text_bubble_style": "res://Dialogic/Styles/text_bubble_style.tres"
 }
 layout/style_list=["res://Dialogic/Styles/text_bubble_style.tres"]
-layout/default_style=""
-glossary/default_case_sensitive=true
-variables={}
+layout/default_style="res://Dialogic/Styles/text_bubble_style.tres"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -61,6 +61,23 @@ choices/reveal_delay=0
 choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
+text/autopauses={}
+audio/channel_defaults={
+"": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+}
+}
+variables={}
+glossary/default_case_sensitive=true
 
 [display]
 

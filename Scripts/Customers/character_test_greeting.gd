@@ -2,9 +2,7 @@ extends Node2D
 
 var in_tween: Tween
 var food_recieved: Array=[]
-var order: Array=["MilkIngredient", "BluberryIngredient"]
-
-
+var order_range = randi_range(1,2)
 
 @onready var sprite_2d: Sprite2D = %Sprite2D
 @onready var collision_shape_2d: CollisionShape2D = %CollisionShape2D
@@ -13,10 +11,16 @@ var order: Array=["MilkIngredient", "BluberryIngredient"]
 @onready var speech_bubble_marker_2d: Marker2D = %SpeechBubbleMarker2D
 
 
+
 func _ready() -> void:
+	#gets a random order, 1 to x items
+	for i in range(order_range):
+		Global.order.append(Global.completed_recipes.pick_random())
+		print(Global.order)
+	
 	await _in_tween()
 	await _inital_timeline()
-	
+
 
 
 func _inital_timeline():
@@ -24,8 +28,8 @@ func _inital_timeline():
 	var layout = Dialogic.Styles.load_style("text_bubble_style")
 	var character_resource = load("res://Dialogic/Characters/character_test.dch")
 	layout.register_character(character_resource, speech_bubble_marker_2d)
-	Dialogic.start("Test")
-	
+	Dialogic.start("customer_order")
+ 
 	await Dialogic.timeline_ended
 
 func _in_tween():
@@ -50,16 +54,16 @@ func _on_customer_hitbox_entered(body: Node2D) -> void:
 	if body.name in Global.completed_recipes:
 		food_recieved.append(str(body.name))
 		food_recieved.sort()
-		order.sort()
+		Global.order.sort()
 		body.queue_free()
 		print(food_recieved)
 
-		if food_recieved == order:
+		if food_recieved == Global.order:
 			Dialogic.start("order_right")
 			await Dialogic.timeline_ended
 			_out_tween()
 
-		elif body.name not in order:
+		elif body.name not in Global.order:
 			food_recieved.pop_back()
 			print(food_recieved)
 			Dialogic.start("order_wrong")

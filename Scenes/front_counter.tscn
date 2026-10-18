@@ -1,14 +1,13 @@
 [gd_scene format=3 uid="uid://b5h8xqh5ax7tx"]
 
-[ext_resource type="PackedScene" uid="uid://1r8mgspmcv2t" path="res://Scenes/Foods/milk_ingredient.tscn" id="1_siu5d"]
-[ext_resource type="PackedScene" uid="uid://l5es74krredl" path="res://Scenes/Foods/bluebery_ingredient.tscn" id="2_f001j"]
-[ext_resource type="PackedScene" uid="uid://cyqoete64hk4p" path="res://Scenes/Foods/tofu_ingredient.tscn" id="3_amrkp"]
+[ext_resource type="Script" uid="uid://b0w3gadjmty3v" path="res://Scripts/UIs/front_counter.gd" id="1_yagsu"]
 [ext_resource type="PackedScene" uid="uid://cx0cn502uvolg" path="res://Scenes/Customers/customer_base.tscn" id="4_f001j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfn2y"]
 size = Vector2(1153, 66)
 
 [node name="front_counter" type="Node2D" unique_id=1019976497]
+script = ExtResource("1_yagsu")
 
 [node name="Counter" type="StaticBody2D" parent="." unique_id=850165918]
 position = Vector2(0, 216)
@@ -17,13 +16,13 @@ position = Vector2(0, 216)
 position = Vector2(576, 296)
 shape = SubResource("RectangleShape2D_rfn2y")
 
-[node name="MilkIngredient" parent="." unique_id=1988172377 instance=ExtResource("1_siu5d")]
-position = Vector2(216, 424)
-
-[node name="BluberryIngredient" parent="." unique_id=1521355494 instance=ExtResource("2_f001j")]
-position = Vector2(104, 408)
-
-[node name="TofuIngredient" parent="." unique_id=725578341 instance=ExtResource("3_amrkp")]
-position = Vector2(360, 360)
-
 [node name="CustomerBase" parent="." unique_id=1801528613 instance=ExtResource("4_f001j")]
+
+[node name="Kitchen" type="Button" parent="." unique_id=372756350]
+offset_left = 16.0
+offset_top = 568.0
+offset_right = 168.0
+offset_bottom = 624.0
+text = "Kitchen"
+
+[connection signal="pressed" from="Kitchen" to="." method="_on_kitchen_button_pressed"]

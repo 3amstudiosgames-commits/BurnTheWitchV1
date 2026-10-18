@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://2uvkrwv3fgc8" path="res://Scripts/UIs/main_menu.gd" id="1_8ir0e"]
 [ext_resource type="Script" uid="uid://cxmfqnnfwwh3s" path="res://Scripts/UIs/audio_control.gd" id="2_cvtvv"]
-[ext_resource type="Script" uid="uid://bx4xivxpal8j4" path="res://Scripts/UIs/sfx_control.gd" id="3_1tfvi"]
+[ext_resource type="Script" path="res://Scripts/UIs/sfx_control.gd" id="3_1tfvi"]
 [ext_resource type="Script" uid="uid://fanaksp2xytd" path="res://Scripts/UIs/full_screen_control.gd" id="3_oc7kv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11bdm"]
@@ -147,6 +147,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1960051962]
+process_mode = 3
 autoplay = true
 
 [node name="Settings" type="Panel" parent="." unique_id=1320969655]
@@ -267,6 +268,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 script = ExtResource("3_1tfvi")
+audio_bus_name = "SFX"
 
 [node name="FullscreenControl" type="CheckButton" parent="Settings" unique_id=204411858]
 layout_mode = 0

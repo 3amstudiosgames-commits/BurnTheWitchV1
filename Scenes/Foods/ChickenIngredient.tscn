@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://br4cbrd7o562e"]
+
+[ext_resource type="Script" uid="uid://b2wridmarmu83" path="res://Scripts/Foods/herbs_ingredient.gd" id="1_g3xs8"]
+[ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_nuufr"]
+
+[node name="ChickenIngredient" type="RigidBody2D" unique_id=1938447948 groups=["Ingredients"]]
+gravity_scale = 5.505
+freeze = true
+continuous_cd = 1
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_g3xs8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1954839396]
+scale = Vector2(0.279097, 0.279097)
+texture = ExtResource("2_nuufr")
+region_enabled = true
+region_rect = Rect2(314.18738, 209.27232, 390.3072, 736.33405)
+
+[node name="Button" type="Button" parent="." unique_id=578627370]
+modulate = Color(1, 1, 1, 0)
+offset_left = -23.0
+offset_top = -29.0
+offset_right = -15.0
+offset_bottom = -16.0
+scale = Vector2(4.9723, 5.12871)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=794328094]
+polygon = PackedVector2Array(4, 87, -47, 79, -49, 59, -12, 2, -11, -22, 24, -19, 58, 18, 52, 39, 11, 53, 18, 66)
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
