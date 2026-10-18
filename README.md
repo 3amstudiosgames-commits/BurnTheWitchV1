@@ -10,7 +10,7 @@ ended: Currently ongoing
 
 
 
-# What Is This Game About?
+# ✨What Is This Game About?✨
 Cooking game where you play as a witch that has to cook to supernatural entities, but don't get too much orders wrong! You don't want to make the costumers angry!  
 
 - You can cook in the kitchen  
@@ -18,6 +18,8 @@ Cooking game where you play as a witch that has to cook to supernatural entities
 - You can unlock food and find new recipes  
   (Things may change)
 ------------------------------------------------------------
-Note:
-Have any idea on what we can add or take out? Leave a comment in the Itch.IO page!
-
+# ➡️What Do We Have Right Know?  
+- You can go to the entrance and talk to a character  
+- You can move stuff in the kitchen to make food  
+- Right now you can make two milkshakes: Apple Milkshake and Blueberry Milkshake  
+- You can see those two recipes after unlocking them in the recipe menu  
