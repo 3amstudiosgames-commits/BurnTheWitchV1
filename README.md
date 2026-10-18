@@ -19,7 +19,7 @@ Windows 10+
 - You can also try the game in the Itch.IO website
 ## Help
 - If Playing in the Itch.IO web do not use any quit buttons  
-   Right now there is no way of saving so leaving means losing any progress
+- Right now there is no way of saving so leaving means losing any progress
 ## License  
 This project is licensed under the --- License. See LICENSE.md file for details  
 
