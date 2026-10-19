@@ -43,6 +43,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fy2bd")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1250603913]
+layer = 2
+
 [node name="Label" type="Label" parent="." unique_id=1172307879]
 process_mode = 2
 layout_mode = 1

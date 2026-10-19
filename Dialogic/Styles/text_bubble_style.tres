@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_ptdnd"]
 [ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_74klw"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="3_0s018"]
-[ext_resource type="PackedScene" uid="uid://d2it0xiap3gnt" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn" id="4_bctqo"]
+[ext_resource type="PackedScene" uid="uid://bijj630sd3lsw" path="res://Dialogic/TextbubbleLayer/custom_textbubble_layer.tscn" id="4_kbd67"]
 
 [sub_resource type="Resource" id="Resource_kbd67"]
 script = ExtResource("1_ptdnd")
@@ -16,7 +16,7 @@ scene = ExtResource("3_0s018")
 
 [sub_resource type="Resource" id="Resource_bctqo"]
 script = ExtResource("1_ptdnd")
-scene = ExtResource("4_bctqo")
+scene = ExtResource("4_kbd67")
 
 [resource]
 script = ExtResource("2_74klw")
@@ -27,4 +27,4 @@ layer_info = {
 "10": SubResource("Resource_0s018"),
 "11": SubResource("Resource_bctqo")
 }
-metadata/_latest_layer = ""
+metadata/_latest_layer = "11"

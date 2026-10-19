@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dww6wp7fdlkah"]
+
+[ext_resource type="Script" uid="uid://bbo5snr5d0hla" path="res://Scripts/UIs/scene_manager.gd" id="1_mk1ro"]
+
+[node name="scene_manager" type="Node2D" unique_id=887848627]
+position = Vector2(576, 344)
+script = ExtResource("1_mk1ro")

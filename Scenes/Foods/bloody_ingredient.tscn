@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://l5es74krredl"]
+[gd_scene format=3 uid="uid://dcx0nkgsfg6k7"]
 
 [ext_resource type="Script" uid="uid://dt0q0c047qqxl" path="res://Scripts/Foods/bloody_ingredient.gd" id="1_k3w0k"]
 [ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_j0cj1"]

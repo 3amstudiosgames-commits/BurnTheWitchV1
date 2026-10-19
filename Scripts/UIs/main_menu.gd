@@ -14,7 +14,7 @@ func _ready() -> void:
 
 func _on_start_game_pressed() -> void:
 	print("Start Pressed")
-	SceneTransition._transition_to_scene("res://Scenes/game.tscn")
+	SceneTransition._transition_to_scene(SceneManager.kitchen)
 
 
 func _on_settings_pressed() -> void:

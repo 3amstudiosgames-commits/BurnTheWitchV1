@@ -62,7 +62,6 @@ position = Vector2(400, 240)
 [node name="BluberryIngredient" parent="." unique_id=363484252 instance=ExtResource("14_1phco")]
 position = Vector2(272, 0)
 mass = 5.0
-gravity_scale = 5.505
 
 [node name="PopUpRecipe" parent="." unique_id=1445618864 instance=ExtResource("7_5hnu0")]
 anchors_preset = 0

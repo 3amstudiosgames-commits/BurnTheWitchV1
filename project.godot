@@ -27,6 +27,7 @@ Global="*res://Scripts/global.gd"
 Dialogic="*uid://ds2q0uclmolvu"
 SceneTransition="*uid://dkqqcrjykvvh7"
 EventBus="*uid://b1ludxi0oxbo0"
+SceneManager="*uid://bbo5snr5d0hla"
 
 [dialogic]
 

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://l5es74krredl"]
+[gd_scene format=3 uid="uid://cipa5jrkgcw2t"]
 
 [ext_resource type="Script" uid="uid://k3yfw1t3bgiy" path="res://Scripts/Foods/eye_ingredient.gd" id="1_vc4bw"]
 [ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_7t0ku"]
