@@ -17,9 +17,12 @@ Windows 10+
 ### Installing/Playing
 - You can download the zip file game from Itchi.IO
 - You can also try the game in the Itch.IO website
-## Help
-- If Playing in the Itch.IO web do not use any quit buttons  
-- Right now there is no way of saving so leaving means losing any progress
+## Help / Bugs
+- If Playing in the Itch.IO web do not use any quit buttons.  
+- Right now there is no way of saving so leaving means losing any progress.  
+- You can't serve any food but you can find it in the recipe menu.
+- Character in front counter disappears if you talk and go back to the kitchen.
+- Images that use Godot icon have no Asset assign to them yet.
 ## License  
 This project is licensed under the --- License. See LICENSE.md file for details  
 
