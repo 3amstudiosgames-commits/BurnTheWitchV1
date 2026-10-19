@@ -12,3 +12,4 @@ res://Scripts/UIs/gamecode.gd
 res://Scripts/UIs/front_counter.gd
 res://Scenes/front_counter.tscn
 res://Scenes/start.tscn
+res://Scenes/UIs/pause_menu.tscn

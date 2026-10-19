@@ -1,10 +1,11 @@
-extends Control
+extends CanvasLayer
 
 @onready var main_buttons: VBoxContainer = $"Main Buttons"
 @onready var settings: Panel = $Settings
 @onready var GamePausedLabel = $Label
 
-@onready var pause_menu: Control = $"."
+@onready var pause_menu: CanvasLayer = $"."
+
 
 #@onready var text_bubble_layer: DialogicLayoutLayer = $"."
 
