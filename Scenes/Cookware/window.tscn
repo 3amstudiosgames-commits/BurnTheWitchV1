@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bbkp0jvrw605q"]
+
+[ext_resource type="Texture2D" uid="uid://cel8fe4kx6w0w" path="res://Assets/Cookware/Window.png" id="1_1hxo7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whp10"]
+size = Vector2(21.182251, 28.899134)
+
+[node name="Window" type="StaticBody2D" unique_id=1355458674]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1143478732]
+scale = Vector2(0.30937457, 0.30937457)
+texture = ExtResource("1_1hxo7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1134929723]
+position = Vector2(-1.4210855e-14, -95)
+scale = Vector2(14.351638, -0.6401574)
+shape = SubResource("RectangleShape2D_whp10")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1041979861]
+position = Vector2(-1.4210855e-14, 125.5)
+scale = Vector2(14.351638, -0.6401574)
+shape = SubResource("RectangleShape2D_whp10")

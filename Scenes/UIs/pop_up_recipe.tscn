@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b2ji1se2gyo15" path="res://Scripts/UIs/pop_up_recipe.gd" id="1_56p3v"]
 [ext_resource type="Texture2D" uid="uid://dj57y3116o2mt" path="res://icon.svg" id="1_64ssj"]
+[ext_resource type="Texture2D" uid="uid://cr2eyucn65eoa" path="res://Assets/UIs/Icons/MagicOrb.png" id="2_p3cja"]
 
 [node name="PopUpRecipe" type="Control" unique_id=1394396815]
 layout_mode = 3
@@ -12,40 +13,45 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
 script = ExtResource("1_56p3v")
 
-[node name="Recipe" type="TextureRect" parent="." unique_id=24533877]
-custom_minimum_size = Vector2(150, 150)
-custom_maximum_size = Vector2(150, 150)
+[node name="MagicOrb" type="TextureRect" parent="." unique_id=1519558001]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -64.0
+offset_left = -231.99998
+offset_top = -211.99998
+offset_right = -103.999985
+offset_bottom = -83.999985
+scale = Vector2(3.6235628, 3.6235628)
+texture = ExtResource("2_p3cja")
+expand_mode = 1
+
+[node name="Recipe" type="TextureRect" parent="." unique_id=24533877]
+layout_mode = 1
+offset_left = -69.0
 offset_top = -64.0
-offset_right = 64.0
+offset_right = 59.0
 offset_bottom = 64.0
-grow_horizontal = 2
-grow_vertical = 2
+scale = Vector2(1.0817809, 1.0817809)
 texture = ExtResource("1_64ssj")
 expand_mode = 1
 
 [node name="ContinueButton" type="Button" parent="." unique_id=1826580234]
 layout_mode = 1
-offset_left = -39.0
+offset_left = -40.0
 offset_top = 84.0
-offset_right = 40.0
+offset_right = 39.0
 offset_bottom = 115.0
 text = "Continue"
 
 [node name="Label" type="Label" parent="." unique_id=1455135656]
 layout_mode = 1
-offset_left = -60.0
-offset_top = -108.0
-offset_right = 60.0
-offset_bottom = -85.0
+offset_left = -130.0
+offset_top = -92.0
+offset_right = 131.0
+offset_bottom = -69.0
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]

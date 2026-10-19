@@ -1,22 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://l8vuyx8y6t18"]
+[gd_scene format=3 uid="uid://l8vuyx8y6t18"]
 
-[ext_resource type="Script" path="res://Scripts/Foods/carrot_ingredient.gd" id="1_r07jj"]
+[ext_resource type="Script" uid="uid://1vqj4fdndrij" path="res://Scripts/Foods/carrot_ingredient.gd" id="1_r07jj"]
 [ext_resource type="Texture2D" uid="uid://bt1mmwnpgdm8t" path="res://Assets/Foods/all_food_1.png" id="2_gewiy"]
 
-[node name="CarrotIngredient" type="RigidBody2D" groups=["Ingredients"]]
+[node name="CarrotIngredient" type="RigidBody2D" unique_id=1968019008 groups=["Ingredients"]]
 gravity_scale = 5.505
 continuous_cd = 1
-contact_monitor = true
 max_contacts_reported = 4
 script = ExtResource("1_r07jj")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1412332455]
 scale = Vector2(0.279097, 0.279097)
 texture = ExtResource("2_gewiy")
 region_enabled = true
 region_rect = Rect2(1296.3, 954.5, 158.4, 389.4)
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1094177043]
 modulate = Color(1, 1, 1, 0)
 offset_left = -19.0
 offset_top = -50.0
@@ -24,8 +23,8 @@ offset_right = -9.0
 offset_bottom = -26.0
 scale = Vector2(4.12418, 4.25391)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-8, 52, -16, 19, -19, -11, -15, -21, -1, -21, 3, -11, 1, 18)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=197284461]
+polygon = PackedVector2Array(-9, 53, -17, 19, -19, 6, -20, -11, -15, -21, 0, -21, 4, -11, 3, 4, 1, 19, -6, 53)
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

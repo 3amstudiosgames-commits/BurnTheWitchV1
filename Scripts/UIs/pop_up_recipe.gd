@@ -5,12 +5,11 @@ extends Control
 
 
 
-
-
 var recipes:={
 #Milkshakes
 	"Apple Milkshake": preload("res://Assets/Foods/AppleMilkshake.png"),
 	"Blueberry Milkshake": preload("res://Assets/Foods/BlueberryMilkshake.png"),
+	"Strawberry Milkshake": preload("res://Assets/Foods/StrawberryMilkshake.png"),
 	"Bloodshot Eye Milkshake": preload("res://Assets/Foods/BloodshotEyeMilkshake.png"),
 	"Basic Milkshake": preload("res://Assets/Cookware/Box.png"),
 	"Biscuit Milkshake": preload("res://Assets/Cookware/Box.png"),

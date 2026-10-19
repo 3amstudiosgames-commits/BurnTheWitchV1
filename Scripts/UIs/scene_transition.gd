@@ -3,6 +3,7 @@ extends CanvasLayer
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
 @onready var canvas_layer: CanvasLayer = $"."
 
+
 func _ready() -> void:
 	canvas_layer.visible = false
 

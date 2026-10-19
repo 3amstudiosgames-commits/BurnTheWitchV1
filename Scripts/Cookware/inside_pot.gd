@@ -11,7 +11,7 @@ const RECIPES: Dictionary={
 	
 #All Milkshakes (6)
 ["BlueberryIngredient","MilkIngredient"]: "Blueberry Milkshake",
-["straberryIngredient","MilkIngredient"]:"Strawberry Milkshake", 
+["StrawberryIngredient","MilkIngredient"]:"Strawberry Milkshake", 
 ["AppleIngredient","MilkIngredient"]: "Apple Milkshake",
 ["BloodyIngredient","EyeIngredient","MilkIngredient"]: "Bloodshot Eye Milkshake",
 ["SugarIngredient","MilkIngredient"]: "Basic Milkshake",
