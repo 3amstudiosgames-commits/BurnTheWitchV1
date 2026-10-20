@@ -5,13 +5,18 @@
 [ext_resource type="PackedScene" uid="uid://1r8mgspmcv2t" path="res://Scenes/Foods/milk_ingredient.tscn" id="2_vxq55"]
 [ext_resource type="PackedScene" uid="uid://l8vuyx8y6t18" path="res://Scenes/Foods/carrot_ingredient.tscn" id="5_pc4w8"]
 [ext_resource type="PackedScene" uid="uid://41bcqtsb28kt" path="res://Scenes/UIs/pause_menu.tscn" id="5_wowpa"]
-[ext_resource type="PackedScene" uid="uid://l5es74krredl" path="res://Scenes/Foods/bluebery_ingredient.tscn" id="6_l4dy0"]
 [ext_resource type="PackedScene" uid="uid://dwacipi1646lq" path="res://Scenes/Cookware/Pot.tscn" id="6_oqhix"]
 [ext_resource type="PackedScene" uid="uid://bvmr2t23ts1q3" path="res://Scenes/UIs/pop_up_recipe.tscn" id="7_5hnu0"]
 [ext_resource type="PackedScene" uid="uid://byx8vaauam443" path="res://Scenes/Foods/herbs_ingredient.tscn" id="8_7msgb"]
 [ext_resource type="PackedScene" uid="uid://d34awfboc723l" path="res://Scenes/Cookware/shelf.tscn" id="9_h4fw4"]
+[ext_resource type="PackedScene" uid="uid://k0aj3bsu7o33" path="res://Scenes/Foods/strawberry_ingredient.tscn" id="10_1phco"]
 [ext_resource type="PackedScene" uid="uid://cyqoete64hk4p" path="res://Scenes/Foods/tofu_ingredient.tscn" id="10_ldgsr"]
-[ext_resource type="Texture2D" uid="uid://dj57y3116o2mt" path="res://icon.svg" id="12_rfjv2"]
+[ext_resource type="PackedScene" uid="uid://bbkp0jvrw605q" path="res://Scenes/Cookware/window.tscn" id="11_1phco"]
+[ext_resource type="Texture2D" uid="uid://vofh8ufo6dhq" path="res://Assets/UIs/Icons/BookClosed.png" id="12_rfjv2"]
+[ext_resource type="PackedScene" uid="uid://l5es74krredl" path="res://Scenes/Foods/bluebery_ingredient.tscn" id="14_1phco"]
+[ext_resource type="PackedScene" uid="uid://bhpxfq1fynrua" path="res://Scenes/Foods/dog_treat_ingredient.tscn" id="15_nb51f"]
+[ext_resource type="PackedScene" uid="uid://8pmfnrfk7r68" path="res://Scenes/Foods/fish_ingredient.tscn" id="16_nnt18"]
+[ext_resource type="PackedScene" uid="uid://cipa5jrkgcw2t" path="res://Scenes/Foods/eye_ingredient.tscn" id="17_ewbju"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m01v1"]
 size = Vector2(20, 28.8596)
@@ -27,36 +32,50 @@ scale = Vector2(57.56, 2.28)
 position = Vector2(0, 4.42981)
 shape = SubResource("RectangleShape2D_m01v1")
 
+[node name="Window" parent="." unique_id=1355458674 instance=ExtResource("11_1phco")]
+position = Vector2(920.00006, 296.00003)
+scale = Vector2(1.1646707, 1.1646707)
+
 [node name="Pot" parent="." unique_id=744624632 instance=ExtResource("6_oqhix")]
-position = Vector2(562, 542)
-scale = Vector2(0.40457, 0.40457)
+position = Vector2(576, 552)
+scale = Vector2(0.36656383, 0.36656383)
 
 [node name="AppleIngredient" parent="." unique_id=1191235726 instance=ExtResource("2_lx5s4")]
-position = Vector2(265, 208)
+position = Vector2(232, 120)
 
 [node name="MilkIngredient" parent="." unique_id=808890814 instance=ExtResource("2_vxq55")]
-position = Vector2(1065, 203)
+position = Vector2(384, 176)
 
 [node name="CarrotIngredient" parent="." unique_id=852776623 instance=ExtResource("5_pc4w8")]
-position = Vector2(981, 193)
-
-[node name="BluberryIngredient" parent="." unique_id=144077500 instance=ExtResource("6_l4dy0")]
-position = Vector2(210, 216)
-gravity_scale = 2.38
+position = Vector2(384, 216)
 
 [node name="shelf" parent="." unique_id=1166927236 instance=ExtResource("9_h4fw4")]
-position = Vector2(133, 274)
-scale = Vector2(0.49056754, 0.49056754)
-
-[node name="shelf2" parent="." unique_id=697107515 instance=ExtResource("9_h4fw4")]
-position = Vector2(1026, 274)
-scale = Vector2(0.5171573, 0.5171573)
+position = Vector2(216, 216)
+scale = Vector2(0.91001344, 0.91001344)
 
 [node name="HerbIngredient" parent="." unique_id=1938447948 instance=ExtResource("8_7msgb")]
-position = Vector2(69, 347)
+position = Vector2(40, 296)
 
 [node name="TofuIngredient" parent="." unique_id=725578341 instance=ExtResource("10_ldgsr")]
-position = Vector2(163, 204)
+position = Vector2(152, 152)
+
+[node name="StrawberryIngredient" parent="." unique_id=920160086 instance=ExtResource("10_1phco")]
+position = Vector2(400, 240)
+
+[node name="BluberryIngredient" parent="." unique_id=363484252 instance=ExtResource("14_1phco")]
+position = Vector2(272, 0)
+mass = 5.0
+
+[node name="DogTreatIngredient" parent="." unique_id=1650936889 instance=ExtResource("15_nb51f")]
+position = Vector2(272, 336)
+
+[node name="FishIngredient" parent="." unique_id=1029412498 instance=ExtResource("16_nnt18")]
+position = Vector2(304, 104)
+
+[node name="EyeIngredient" parent="." unique_id=594391567 instance=ExtResource("17_ewbju")]
+position = Vector2(152, 424)
+mass = 5.0
+gravity_scale = 5.505
 
 [node name="PopUpRecipe" parent="." unique_id=1445618864 instance=ExtResource("7_5hnu0")]
 anchors_preset = 0
@@ -70,17 +89,16 @@ offset_right = 568.0
 offset_bottom = 314.0
 grow_horizontal = 1
 grow_vertical = 1
-size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="PauseMenu" parent="." unique_id=79655063 instance=ExtResource("5_wowpa")]
 
 [node name="RecipeMenuButton" type="TextureButton" parent="." unique_id=12655200]
-offset_left = 1042.0
-offset_top = 18.0
-offset_right = 1170.0
-offset_bottom = 146.0
-scale = Vector2(0.6721263, 0.6721263)
+offset_left = 1024.0
+offset_top = 8.0
+offset_right = 2024.0
+offset_bottom = 1008.0
+scale = Vector2(0.10990393, 0.10990393)
 texture_normal = ExtResource("12_rfjv2")
 
 [node name="ToCounterButton" type="Button" parent="." unique_id=5600741]

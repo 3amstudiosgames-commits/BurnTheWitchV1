@@ -13,7 +13,7 @@ script = ExtResource("1_s1h0e")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=630760412]
 position = Vector2(-3, 4)
-scale = Vector2(0.06770382, 0.06770382)
+scale = Vector2(0.08152886, 0.08152886)
 texture = ExtResource("2_66bna")
 region_enabled = true
 region_rect = Rect2(782, 846, 591, 574)
@@ -28,7 +28,7 @@ scale = Vector2(5.491187, 5.6639194)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1867267819]
 position = Vector2(-4, 7.0000005)
-scale = Vector2(1.6092883, 1.6092883)
+scale = Vector2(1.9662017, 1.9662017)
 polygon = PackedVector2Array(0.5007745, 9.013941, -3.5054216, 9.013941, -9.013941, 4.006196, -9.514715, -5.007745, -5.5085196, -8.513166, 0, -7.511617, 6.5100684, -8.513166, 11.017038, -5.007745, 9.514715, 4.006196, 5.007745, 9.514715)
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

@@ -14,6 +14,8 @@ var recipes:={
 	"Fish Milkshake": preload("res://Assets/Foods/FishMilkshake.png"),
 	"Biscuit Milkshake": preload("res://Assets/Foods/DogTreatMilkshake.png"),
 
+#Others
+	"Mess": preload("res://Assets/Cookware/Box.png")
 }
 
 

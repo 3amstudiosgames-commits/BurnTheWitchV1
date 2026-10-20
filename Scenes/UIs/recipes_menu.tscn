@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dj57y3116o2mt" path="res://icon.svg" id="1_og7og"]
 [ext_resource type="Script" uid="uid://bpdmjy6sp5gtk" path="res://Scripts/UIs/recipes_menu.gd" id="1_xu8s2"]
-[ext_resource type="Texture2D" uid="uid://btvcycd1gjjx" path="res://Assets/UIs/Icons/BookOpened.png" id="3_vpm2k"]
+[ext_resource type="Texture2D" uid="uid://cpngcuitutd77" path="res://Assets/UIs/Icons/BookOpened.png" id="3_vpm2k"]
 
 [node name="RecipesMenu" type="Control" unique_id=573677174]
 layout_mode = 3
@@ -32,10 +32,9 @@ theme_override_constants/v_separation = 30
 columns = 3
 
 [node name="MilkShakeBlueberry" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1971119267]
+custom_minimum_size = Vector2(128, 128)
 custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
 stretch_mode = 0
 
@@ -74,14 +73,12 @@ text = "???"
 horizontal_alignment = 1
 
 [node name="MilkShakeBloodshoteye" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=515250677]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
-[node name="MilkShakeFish" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1112734577]
+[node name="MilkShakeBasic" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1112734577]
 custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -103,7 +100,7 @@ size_flags_horizontal = 4
 text = "???"
 horizontal_alignment = 1
 
-[node name="MilkShakeFishLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=961893315]
+[node name="MilkShakeBasicLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=961893315]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "???"
@@ -116,28 +113,22 @@ text = "???"
 horizontal_alignment = 1
 
 [node name="CarrotCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=746810272]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="BloodyCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1779568419]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="CrystalCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=964385095]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="CarrotCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=636624081]
 layout_mode = 2
@@ -158,28 +149,22 @@ text = "???"
 horizontal_alignment = 1
 
 [node name="FruitCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=2015864531]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="BasicCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=341330907]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="RainbowCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1009910561]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="FruitCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=1497041644]
 layout_mode = 2
@@ -200,28 +185,22 @@ text = "???"
 horizontal_alignment = 1
 
 [node name="TofuPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=2127044807]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="BloodyPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1539075735]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="BasicPudding" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=318042541]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="TofuPuddingLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=423504639]
 layout_mode = 2
@@ -242,28 +221,22 @@ text = "???"
 horizontal_alignment = 1
 
 [node name="BadCake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1148905989]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="BadMilkShake" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1005029086]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="TextureButton18" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=564892062]
-custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
-stretch_mode = 0
 
 [node name="BadCakeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=206747627]
 layout_mode = 2
@@ -286,14 +259,14 @@ horizontal_alignment = 1
 [node name="TextureButton" type="TextureButton" parent="." unique_id=909944199]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.87500006
-anchor_top = 0.037
-anchor_right = 0.87500006
-anchor_bottom = 0.037
-offset_left = 6.1035156e-05
-offset_top = 0.024000168
-offset_right = 1000.00006
-offset_bottom = 1000.024
+anchor_left = 0.021000002
+anchor_top = 0.025
+anchor_right = 0.021000002
+anchor_bottom = 0.025
+offset_left = 991.8081
+offset_top = -0.20000076
+offset_right = 1991.8081
+offset_bottom = 999.8
 scale = Vector2(0.09736854, 0.09736854)
 texture_normal = ExtResource("3_vpm2k")
 

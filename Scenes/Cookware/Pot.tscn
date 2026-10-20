@@ -17,16 +17,6 @@ size = Vector2(352, 48)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x7wk0"]
 size = Vector2(332, 335)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hpj4r"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_18gl7"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mo2wx"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l0tg8"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fdn3n"]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_whp10"]
 animations = [{
 "frames": [{
@@ -87,11 +77,6 @@ offset_top = -240.0
 offset_right = -134.99998
 offset_bottom = -209.0
 scale = Vector2(4.1999993, 14.16)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_hpj4r")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_18gl7")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_mo2wx")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_l0tg8")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_fdn3n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=89011058]
 position = Vector2(8, -520)
