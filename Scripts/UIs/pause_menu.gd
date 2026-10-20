@@ -7,18 +7,13 @@ extends CanvasLayer
 @onready var pause_menu: CanvasLayer = $"."
 
 
-#@onready var text_bubble_layer: DialogicLayoutLayer = $"."
-
-
-
 func _ready() -> void:
 	main_buttons.visible = false
 	settings.visible = false
 	GamePausedLabel.visible = false
 	get_tree().paused = false
 	
-	#if "res://Dialogic/TextbubbleLayer/custom_textbubble_layer.tscn":
-		#text_bubble_layer.visible = true
+
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Escape") and GamePausedLabel.visible ==false:
