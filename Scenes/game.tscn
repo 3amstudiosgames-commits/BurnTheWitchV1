@@ -78,11 +78,6 @@ grow_vertical = 1
 size_flags_vertical = 4
 
 [node name="PauseMenu" parent="." unique_id=79655063 instance=ExtResource("5_wowpa")]
-offset_left = 583.0
-offset_top = 338.0
-offset_right = 583.0
-offset_bottom = 338.0
-size_flags_horizontal = 4
 
 [node name="RecipeMenuButton" type="TextureButton" parent="." unique_id=12655200]
 offset_left = 1024.0

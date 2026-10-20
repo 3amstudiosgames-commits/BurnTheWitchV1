@@ -31,5 +31,5 @@ func _on_food_unlocked(food_found:String) -> void:
 
 
 func _on_texture_button_pressed() -> void:
-		get_tree().change_scene_to_file("res://Scenes/game.tscn")
+		SceneTransition._transition_to_scene(SceneManager.kitchen)
 		print("back to game")
