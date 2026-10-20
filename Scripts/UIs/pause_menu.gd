@@ -1,10 +1,14 @@
-extends Control
+extends CanvasLayer
 
 @onready var main_buttons: VBoxContainer = $"Main Buttons"
 @onready var settings: Panel = $Settings
 @onready var GamePausedLabel = $Label
 
-@onready var pause_menu: Control = $"."
+@onready var pause_menu: CanvasLayer = $"."
+
+
+#@onready var text_bubble_layer: DialogicLayoutLayer = $"."
+
 
 
 func _ready() -> void:
@@ -12,6 +16,9 @@ func _ready() -> void:
 	settings.visible = false
 	GamePausedLabel.visible = false
 	get_tree().paused = false
+	
+	#if "res://Dialogic/TextbubbleLayer/custom_textbubble_layer.tscn":
+		#text_bubble_layer.visible = true
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Escape") and GamePausedLabel.visible ==false:
@@ -19,6 +26,10 @@ func _process(delta: float) -> void:
 		main_buttons.visible = true
 		GamePausedLabel.visible = true
 		get_tree().paused = true
+		
+		#if "res://Dialogic/TextbubbleLayer/custom_textbubble_layer.tscn":
+			#text_bubble_layer.visible = false
+
 	elif Input.is_action_just_pressed("Escape") and GamePausedLabel.visible ==true:
 		print("Escape pressed out")
 		_ready()
@@ -46,4 +57,4 @@ func _on_back_settings_pressed() -> void:
 	settings.visible = false
 
 func _on_return_main_menu_pressed() -> void:
-	SceneTransition._transition_to_scene("res://Scenes/UIs/main_menu.tscn")
+	SceneTransition._transition_to_scene(SceneManager.main_menu)

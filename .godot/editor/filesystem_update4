@@ -1,4 +1,2 @@
-res://Scenes/game.tscn
+res://Scenes/UIs/main_menu.tscn
 res://Dialogic/Styles/text_bubble_style.tres
-res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
-res://Scripts/Foods/ingredient_code.gd

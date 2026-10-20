@@ -7,18 +7,17 @@ extends CanvasLayer
 func _ready() -> void:
 	canvas_layer.visible = false
 
-func _transition_to_scene(target_scene_path: String) -> void:
+func _transition_to_scene(target_scene_path: Node) -> void:
 	
 	canvas_layer.visible = true
 	
 	#start animation
 	if animation_player:
-		print("animation player exists")
 		animation_player.play("Fade")
 		await animation_player.animation_finished
 	
-	get_tree().change_scene_to_file(target_scene_path)
-	await get_tree().process_frame
+	SceneManager.switch_scene(target_scene_path)
+	
 	
 	#finish animation
 	if animation_player:

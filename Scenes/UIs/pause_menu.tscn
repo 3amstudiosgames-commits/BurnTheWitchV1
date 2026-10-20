@@ -33,19 +33,13 @@ shadow_offset = Vector2(0, 3.41)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3un8k"]
 
-[node name="PauseMenu" type="Control" unique_id=1733997507]
+[node name="PauseMenu" type="CanvasLayer" unique_id=395322357]
 process_mode = 3
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layer = 10
 script = ExtResource("1_fy2bd")
 
 [node name="Label" type="Label" parent="." unique_id=1172307879]
 process_mode = 2
-layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -69,7 +63,6 @@ bus = &"Music"
 
 [node name="Main Buttons" type="VBoxContainer" parent="." unique_id=1836773216]
 process_mode = 2
-layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -146,7 +139,6 @@ text = "Quit"
 
 [node name="Settings" parent="." unique_id=1240063776 instance=ExtResource("3_vcifk")]
 visible = false
-layout_mode = 1
 offset_left = -258.0
 offset_top = -108.0
 offset_right = 264.0
