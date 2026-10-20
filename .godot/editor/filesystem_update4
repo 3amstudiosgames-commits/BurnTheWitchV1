@@ -1,2 +1,3 @@
 res://Scenes/UIs/main_menu.tscn
 res://Dialogic/Styles/text_bubble_style.tres
+res://Scripts/UIs/gamecode.gd
