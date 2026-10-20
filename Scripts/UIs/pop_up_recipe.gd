@@ -11,18 +11,9 @@ var recipes:={
 	"Blueberry Milkshake": preload("res://Assets/Foods/BlueberryMilkshake.png"),
 	"Strawberry Milkshake": preload("res://Assets/Foods/StrawberryMilkshake.png"),
 	"Bloodshot Eye Milkshake": preload("res://Assets/Foods/BloodshotEyeMilkshake.png"),
-	"Basic Milkshake": preload("res://Assets/Cookware/Box.png"),
-	"Biscuit Milkshake": preload("res://Assets/Cookware/Box.png"),
-#Cakes
-	"Carrot Cake": preload("res://Assets/Cookware/Box.png"),
-	"Bloody Cake":preload("res://Assets/Cookware/Box.png"),
-	"Crystal Cake": preload("res://Assets/Cookware/Box.png"),
-	"Rainbow Cake": preload("res://Assets/Cookware/Box.png"),
-	"Basic Cake":preload("res://Assets/Cookware/Box.png"),
-#Puddings
+	"Fish Milkshake": preload("res://Assets/Foods/FishMilkshake.png"),
+	"Biscuit Milkshake": preload("res://Assets/Foods/DogTreatMilkshake.png"),
 
-#Others
-	"Mess": preload("res://Assets/Cookware/Box.png")
 }
 
 

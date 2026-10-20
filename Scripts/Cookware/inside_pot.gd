@@ -12,20 +12,11 @@ const RECIPES: Dictionary={
 #All Milkshakes (6)
 ["BlueberryIngredient","MilkIngredient"]: "Blueberry Milkshake",
 ["StrawberryIngredient","MilkIngredient"]:"Strawberry Milkshake", 
+["StrawberryIngredient","BlueberryIngredient","MilkIngredient"]:"Wild Milkshake", 
 ["AppleIngredient","MilkIngredient"]: "Apple Milkshake",
-["BloodyIngredient","EyeIngredient","MilkIngredient"]: "Bloodshot Eye Milkshake",
-["SugarIngredient","MilkIngredient"]: "Basic Milkshake",
+["EyeIngredient","MilkIngredient"]: "Bloodshot Eye Milkshake",
+["FishIngredient","MilkIngredient"]: "Fish Milkshake",
 ["DogTreatIngredient","MilkIngredient"]: "Biscuit Milkshake",
-#All Cakes (6)
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CarrotIngredient"]: "Carrot Cake",
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","BloodVitalIngredient"]: "Bloody Cake",
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CrystalIngredient"]: "Crystal Cake",
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","RainbowIngredient"]: "Rainbow Cake",
-["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient"]: "Basic Cake"
-
-#All Puddings (6)
-
-
 }
 
 func _ready() -> void:
