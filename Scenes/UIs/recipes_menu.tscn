@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dj57y3116o2mt" path="res://icon.svg" id="1_og7og"]
 [ext_resource type="Script" uid="uid://bpdmjy6sp5gtk" path="res://Scripts/UIs/recipes_menu.gd" id="1_xu8s2"]
-[ext_resource type="Texture2D" uid="uid://btvcycd1gjjx" path="res://Assets/UIs/Icons/BookOpened.png" id="3_vpm2k"]
+[ext_resource type="Texture2D" uid="uid://cpngcuitutd77" path="res://Assets/UIs/Icons/BookOpened.png" id="3_vpm2k"]
 
 [node name="RecipesMenu" type="Control" unique_id=573677174]
 layout_mode = 3
@@ -79,16 +79,20 @@ size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
 
 [node name="MilkShakeBasic" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1112734577]
+custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="MilkShakeBisicuitFrappe" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=184196627]
+custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="MilkShakeBloodshoteyeLabel" type="Label" parent="ScrollContainer/Recipe" unique_id=2061445371]
 layout_mode = 2
