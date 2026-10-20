@@ -23,6 +23,7 @@ Windows 10+
 - You can't serve any food but you can find it in the recipe menu.
 - Character in front counter disappears if you talk and go back to the kitchen.
 - Images that use Godot icon have no Asset assign to them yet.
+- No way of re-spawning ingredients yet
 ## License  
 This project is licensed under the --- License. See LICENSE.md file for details  
 
