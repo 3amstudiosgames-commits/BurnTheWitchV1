@@ -1,24 +1,9 @@
-<<<<<<< HEAD
-res://Scenes/scene_manager.tscn
-res://Dialogic/Styles/text_bubble_style.tres
-res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
-res://Scripts/UIs/scene_transition.gd
-res://Scenes/game.tscn
-res://Scripts/UIs/gamecode.gd
 res://Scenes/start.tscn
-res://Scripts/UIs/main_menu.gd
-res://Scripts/UIs/pause_menu.gd
-res://Scenes/front_counter.tscn
-res://Scripts/UIs/front_counter.gd
-res://Scenes/UIs/scene_transition.tscn
-res://Scripts/UIs/scene_manager.gd
-=======
-res://Scenes/game.tscn
 res://Dialogic/Styles/text_bubble_style.tres
 res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
-res://Scenes/Foods/fish_ingredient.tscn
-res://Scripts/Cookware/inside_pot.gd
-res://Scripts/UIs/pop_up_recipe.gd
-res://Scripts/UIs/recipes_menu.gd
-res://Scenes/UIs/recipes_menu.tscn
->>>>>>> 088b57765d80070e9228f5ed05d49c3d82f14e5c
+res://Scripts/UIs/gamecode.gd
+res://Scripts/UIs/front_counter.gd
+res://Scenes/game.tscn
+res://Scripts/Customers/charatcer_test_greeting.gd
+res://Scenes/Customers/customer_base.tscn
+res://Dialogic/Timelines/restate_order.dtl

@@ -37,7 +37,8 @@ directories/dch_directory={
 directories/dtl_directory={
 "customer_order": "res://Dialogic/Timelines/customer_order.dtl",
 "order_right": "res://Dialogic/Timelines/order_right.dtl",
-"order_wrong": "res://Dialogic/Timelines/order_wrong.dtl"
+"order_wrong": "res://Dialogic/Timelines/order_wrong.dtl",
+"restate_order": "res://Dialogic/Timelines/restate_order.dtl"
 }
 layout/style_directory={
 "": "res://Dialogic/Styles/text_bubble_style.tres",

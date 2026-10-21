@@ -38,3 +38,4 @@ position = Vector2(0.34375, 39)
 shape = SubResource("RectangleShape2D_u15vf")
 
 [connection signal="body_entered" from="customer/Area2D" to="." method="_on_customer_hitbox_entered"]
+[connection signal="input_event" from="customer/Area2D" to="." method="_on_area_2d_input_event"]

@@ -36,6 +36,7 @@ func _transition_to_scene(target_scene_path: Node) -> void:
 	
 #Counter scene to center from right side
 func right_slide_transition_to_scene(new_scene_name: Node, current_scene_name: Node) -> void:
+	SceneManager.current_scene = new_scene_name
 	SceneManager.add_scene(new_scene_name)
 	new_scene_name.global_position =  right_of_screen
 	 
@@ -48,6 +49,7 @@ func right_slide_transition_to_scene(new_scene_name: Node, current_scene_name: N
 
 #Kitchen scene to center from left side
 func left_slide_transition_to_scene(new_scene_name: Node, current_scene_name: Node) -> void:
+	SceneManager.current_scene = new_scene_name
 	SceneManager.add_scene(new_scene_name)
 	new_scene_name.global_position =  left_of_screen
 	 
