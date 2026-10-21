@@ -7,4 +7,5 @@ func _on_recipe_menu_button_pressed() -> void:
 
 
 func _on_to_counter_button_pressed() -> void:
-	SceneTransition._transition_to_scene(SceneManager.front_counter)
+	#SceneTransition._transition_to_scene(SceneManager.front_counter)
+	SceneTransition.right_slide_transition_to_scene(SceneManager.front_counter, SceneManager.kitchen)

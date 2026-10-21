@@ -88,10 +88,10 @@ scale = Vector2(0.10990393, 0.10990393)
 texture_normal = ExtResource("12_rfjv2")
 
 [node name="ToCounterButton" type="Button" parent="." unique_id=5600741]
-offset_left = 24.0
-offset_top = 560.0
-offset_right = 176.0
-offset_bottom = 616.0
+offset_left = 16.0
+offset_top = 568.0
+offset_right = 168.0
+offset_bottom = 624.0
 text = "Counter"
 
 [connection signal="pressed" from="RecipeMenuButton" to="." method="_on_recipe_menu_button_pressed"]

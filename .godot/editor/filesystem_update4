@@ -1,8 +1,13 @@
-res://Scenes/start.tscn
+res://Scenes/scene_manager.tscn
 res://Dialogic/Styles/text_bubble_style.tres
 res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
+res://Scripts/UIs/scene_transition.gd
 res://Scenes/game.tscn
 res://Scripts/UIs/gamecode.gd
+res://Scenes/start.tscn
+res://Scripts/UIs/main_menu.gd
+res://Scripts/UIs/pause_menu.gd
+res://Scenes/front_counter.tscn
+res://Scripts/UIs/front_counter.gd
+res://Scenes/UIs/scene_transition.tscn
 res://Scripts/UIs/scene_manager.gd
-res://Scenes/UIs/recipes_menu.tscn
-res://Scripts/UIs/recipes_menu.gd
