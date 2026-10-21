@@ -28,6 +28,7 @@ Dialogic="*uid://ds2q0uclmolvu"
 SceneTransition="*uid://dkqqcrjykvvh7"
 EventBus="*uid://b1ludxi0oxbo0"
 SceneManager="*uid://bbo5snr5d0hla"
+MoneyAmount="*uid://3qeqw4qs2ekt"
 
 [dialogic]
 

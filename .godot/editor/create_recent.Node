@@ -1,3 +1,7 @@
+TextureButton
+GridContainer
+Label
+Panel
 CanvasLayer
 CollisionShape2D
 CollisionPolygon2D
@@ -8,7 +12,3 @@ Button
 AnimationPlayer
 ColorRect
 Area2D
-TextureButton
-TextureRect
-VScrollBar
-ScrollContainer

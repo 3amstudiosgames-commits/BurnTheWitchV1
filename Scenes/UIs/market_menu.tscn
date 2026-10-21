@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://m51pjloyuqxo"]
+
+[ext_resource type="Script" uid="uid://d0ajpqvincfb5" path="res://Scripts/UIs/market_menu.gd" id="1_svr7d"]
+[ext_resource type="Texture2D" uid="uid://dj57y3116o2mt" path="res://icon.svg" id="2_udl7t"]
+
+[node name="MarketMenu" type="Control" unique_id=224413291]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_svr7d")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=198900469]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16700001
+anchor_top = 0.432
+anchor_right = 0.16700001
+anchor_bottom = 0.432
+offset_left = -0.38401794
+offset_top = 0.06399536
+offset_right = 751.61597
+offset_bottom = 128.064
+theme_override_constants/h_separation = 80
+theme_override_constants/v_separation = 70
+columns = 4
+
+[node name="IngredientDisplay1" type="TextureButton" parent="GridContainer" unique_id=933845317]
+layout_mode = 2
+texture_normal = ExtResource("2_udl7t")
+
+[node name="IngredientDisplay2" type="TextureButton" parent="GridContainer" unique_id=146414555]
+layout_mode = 2
+texture_normal = ExtResource("2_udl7t")
+
+[node name="IngredientDisplay3" type="TextureButton" parent="GridContainer" unique_id=1040610379]
+layout_mode = 2
+texture_normal = ExtResource("2_udl7t")
+
+[node name="IngredientDisplay4" type="TextureButton" parent="GridContainer" unique_id=950903553]
+layout_mode = 2
+texture_normal = ExtResource("2_udl7t")
+
+[node name="ObjectDisplay1" type="TextureButton" parent="GridContainer" unique_id=1267282657]
+layout_mode = 2
+texture_normal = ExtResource("2_udl7t")
+
+[node name="ObjectDisplay2" type="TextureButton" parent="GridContainer" unique_id=1781007527]
+layout_mode = 2
+texture_normal = ExtResource("2_udl7t")
+
+[node name="ObjectDisplay3" type="TextureButton" parent="GridContainer" unique_id=1327192706]
+layout_mode = 2
+texture_normal = ExtResource("2_udl7t")
+
+[node name="ObjectDisplay4" type="TextureButton" parent="GridContainer" unique_id=401112171]
+layout_mode = 2
+texture_normal = ExtResource("2_udl7t")
+
+[connection signal="pressed" from="GridContainer/IngredientDisplay1" to="." method="_on_ingredient_display_1_pressed"]
+[connection signal="pressed" from="GridContainer/IngredientDisplay2" to="." method="_on_ingredient_display_2_pressed"]
+[connection signal="pressed" from="GridContainer/IngredientDisplay3" to="." method="_on_ingredient_display_3_pressed"]
+[connection signal="pressed" from="GridContainer/IngredientDisplay4" to="." method="_on_ingredient_display_4_pressed"]
+[connection signal="pressed" from="GridContainer/ObjectDisplay1" to="." method="_on_object_display_1_pressed"]
+[connection signal="pressed" from="GridContainer/ObjectDisplay2" to="." method="_on_object_display_2_pressed"]
+[connection signal="pressed" from="GridContainer/ObjectDisplay3" to="." method="_on_object_display_3_pressed"]
+[connection signal="pressed" from="GridContainer/ObjectDisplay4" to="." method="_on_object_display_4_pressed"]

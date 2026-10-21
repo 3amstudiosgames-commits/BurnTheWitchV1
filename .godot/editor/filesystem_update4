@@ -1,8 +1,7 @@
 res://Scenes/game.tscn
 res://Dialogic/Styles/text_bubble_style.tres
 res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
-res://Scenes/Foods/fish_ingredient.tscn
-res://Scripts/Cookware/inside_pot.gd
-res://Scripts/UIs/pop_up_recipe.gd
-res://Scripts/UIs/recipes_menu.gd
+res://Scripts/UIs/market_menu.gd
+res://Scenes/UIs/market_menu.tscn
+res://Scripts/UIs/money_amount.gd
 res://Scenes/UIs/recipes_menu.tscn

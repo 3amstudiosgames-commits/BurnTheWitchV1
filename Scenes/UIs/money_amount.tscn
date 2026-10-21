@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://b7abcw30b5pf5"]
+
+[ext_resource type="Script" uid="uid://3qeqw4qs2ekt" path="res://Scripts/UIs/money_amount.gd" id="1_pl3vn"]
+
+[node name="MoneyAmount" type="Control" unique_id=286425449]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pl3vn")
+
+[node name="Panel" type="Panel" parent="." unique_id=1406984348]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.033
+anchor_top = 0.023000002
+anchor_right = 0.033
+anchor_bottom = 0.023000002
+offset_left = -0.01599884
+offset_top = 0.095998764
+offset_right = 127.984
+offset_bottom = 40.096
+
+[node name="MoneyAmount" type="Label" parent="Panel" unique_id=600618228]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.039
+anchor_top = 0.5
+anchor_right = 0.039
+anchor_bottom = 0.5
+offset_left = 0.007999897
+offset_top = -16.0
+offset_right = 121.008
+offset_bottom = 15.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "$ 9000"
