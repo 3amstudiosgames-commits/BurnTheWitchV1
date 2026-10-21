@@ -12,8 +12,11 @@
 [ext_resource type="PackedScene" uid="uid://k0aj3bsu7o33" path="res://Scenes/Foods/strawberry_ingredient.tscn" id="10_1phco"]
 [ext_resource type="PackedScene" uid="uid://cyqoete64hk4p" path="res://Scenes/Foods/tofu_ingredient.tscn" id="10_ldgsr"]
 [ext_resource type="PackedScene" uid="uid://bbkp0jvrw605q" path="res://Scenes/Cookware/window.tscn" id="11_1phco"]
-[ext_resource type="Texture2D" uid="uid://clupeeumdujh3" path="res://Assets/UIs/Icons/BookClosed.png" id="12_rfjv2"]
+[ext_resource type="Texture2D" uid="uid://vofh8ufo6dhq" path="res://Assets/UIs/Icons/BookClosed.png" id="12_rfjv2"]
 [ext_resource type="PackedScene" uid="uid://l5es74krredl" path="res://Scenes/Foods/bluebery_ingredient.tscn" id="14_1phco"]
+[ext_resource type="PackedScene" uid="uid://bhpxfq1fynrua" path="res://Scenes/Foods/dog_treat_ingredient.tscn" id="15_nb51f"]
+[ext_resource type="PackedScene" uid="uid://8pmfnrfk7r68" path="res://Scenes/Foods/fish_ingredient.tscn" id="16_nnt18"]
+[ext_resource type="PackedScene" uid="uid://cipa5jrkgcw2t" path="res://Scenes/Foods/eye_ingredient.tscn" id="17_ewbju"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m01v1"]
 size = Vector2(20, 28.8596)
@@ -62,6 +65,17 @@ position = Vector2(400, 240)
 [node name="BluberryIngredient" parent="." unique_id=363484252 instance=ExtResource("14_1phco")]
 position = Vector2(272, 0)
 mass = 5.0
+
+[node name="DogTreatIngredient" parent="." unique_id=1650936889 instance=ExtResource("15_nb51f")]
+position = Vector2(272, 336)
+
+[node name="FishIngredient" parent="." unique_id=1029412498 instance=ExtResource("16_nnt18")]
+position = Vector2(304, 104)
+
+[node name="EyeIngredient" parent="." unique_id=594391567 instance=ExtResource("17_ewbju")]
+position = Vector2(152, 424)
+mass = 5.0
+gravity_scale = 5.505
 
 [node name="PopUpRecipe" parent="." unique_id=1445618864 instance=ExtResource("7_5hnu0")]
 anchors_preset = 0

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bhpxfq1fynrua"]
 
 [ext_resource type="Script" uid="uid://cbcwr0w0j5l2d" path="res://Scripts/Foods/dog_treat_ingredient.gd" id="1_kykdx"]
-[ext_resource type="Texture2D" uid="uid://cwraoj27pejsy" path="res://Assets/Foods/manyapples.png" id="2_i3fy5"]
+[ext_resource type="Texture2D" uid="uid://cmabu4awdidms" path="res://Assets/Foods/DogTreat.png" id="2_kykdx"]
 
 [node name="DogTreatIngredient" type="RigidBody2D" unique_id=725578341 groups=["Ingredients"]]
 mass = 5.0
@@ -13,10 +13,10 @@ script = ExtResource("1_kykdx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=630760412]
 position = Vector2(-3, 4)
-scale = Vector2(0.08152886, 0.08152886)
-texture = ExtResource("2_i3fy5")
+scale = Vector2(0.033154644, 0.033154644)
+texture = ExtResource("2_kykdx")
 region_enabled = true
-region_rect = Rect2(782, 846, 591, 574)
+region_rect = Rect2(472, 1088, 1912, 872)
 
 [node name="Button" type="Button" parent="." unique_id=982790656]
 modulate = Color(1, 1, 1, 0)
@@ -27,9 +27,9 @@ offset_bottom = -9.0
 scale = Vector2(5.491187, 5.6639194)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1867267819]
-position = Vector2(-4, 7.0000005)
-scale = Vector2(1.9662017, 1.9662017)
-polygon = PackedVector2Array(0.5007745, 9.013941, -3.5054216, 9.013941, -9.013941, 4.006196, -9.514715, -5.007745, -5.5085196, -8.513166, 0, -7.511617, 6.5100684, -8.513166, 11.017038, -5.007745, 9.514715, 4.006196, 5.007745, 9.514715)
+position = Vector2(-3, 5)
+scale = Vector2(0.7995785, 0.7995785)
+polygon = PackedVector2Array(-30.515688, -15.766439, -17.292223, -8.646112, 21.869577, -8.137518, 31.532879, -14.240656, 38.653206, -7.6289225, 37.12742, 12.206276, 27.46412, 14.240654, 18.309414, 8.646112, -18.309412, 8.646112, -26.955524, 14.74925, -37.636017, 10.6804905, -37.636017, -10.680491)
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

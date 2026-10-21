@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Witch Game"
 config/tags=PackedStringArray("v5")
-run/main_scene="res://Scenes/UIs/main_menu.tscn"
+run/main_scene="uid://dydcv6iday7r4"
 config/features=PackedStringArray("4.7", "Forward Plus")
 run/max_fps=60
 config/icon="res://icon.svg"

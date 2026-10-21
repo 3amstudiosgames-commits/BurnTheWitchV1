@@ -6,16 +6,16 @@ extends Control
 	"Apple Milkshake": {"button": $ScrollContainer/Recipe/MilkShakeApple, "label": $ScrollContainer/Recipe/MilkShakeAppleLabel},
 	"Strawberry Milkshake":{"button": $ScrollContainer/Recipe/MilkShakeStrawberry,"label": $ScrollContainer/Recipe/MilkShakeStrawberryLabel},
 	"Bloodshot Eye Milkshake":{"button": $ScrollContainer/Recipe/MilkShakeBloodshoteye,"label": $ScrollContainer/Recipe/MilkShakeBloodshoteyeLabel},
-	"Basic Milkshake":{"button": $ScrollContainer/Recipe/MilkShakeBasic,"label": $ScrollContainer/Recipe/MilkShakeBasicLabel},
-	"Milkshake Bicuit Frappe":{"button": $ScrollContainer/Recipe/MilkShakeBisicuitFrappe,"label": $ScrollContainer/Recipe/MilkShakeBicuitFrappeLabel},
+	"Fish Milkshake":{"button": $ScrollContainer/Recipe/MilkShakeBasic,"label": $ScrollContainer/Recipe/MilkShakeBasicLabel},
+	"Biscuit Milkshake":{"button": $ScrollContainer/Recipe/MilkShakeBisicuitFrappe,"label": $ScrollContainer/Recipe/MilkShakeBicuitFrappeLabel},
 }
 var images_unlocked:={
 	"Blueberry Milkshake":preload("res://Assets/Foods/BlueberryMilkshake.png"),
 	"Apple Milkshake":preload("res://Assets/Foods/AppleMilkshake.png"),
 	"Strawberry Milkshake":preload("res://Assets/Foods/StrawberryMilkshake.png"),
-	"Blodshot eye Milkshake":preload("res://Assets/Foods/BloodshotEyeMilkshake.png"),
-	"Basic Milkshake":preload("res://Assets/Cookware/cutting_board.png"),
-	"Milkshake Bisucit Frappe":preload("res://Assets/Cookware/cutting_board.png"),
+	"Bloodshot Eye Milkshake":preload("res://Assets/Foods/BloodshotEyeMilkshake.png"),
+	"Fish Milkshake":preload("res://Assets/Foods/FishMilkshake.png"),
+	"Biscuit Milkshake":preload("res://Assets/Foods/DogTreatMilkshake.png"),
 } 
 
 func _ready() -> void:

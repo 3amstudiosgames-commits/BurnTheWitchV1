@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cl5tijr2uscnm"]
+
+[ext_resource type="Script" uid="uid://dpcvyn1wt7vk3" path="res://Scripts/Foods/flour_ingredient.gd" id="1_1rqrv"]
+[ext_resource type="Texture2D" uid="uid://b3sqj6slgjkg5" path="res://Assets/Foods/Flour.png" id="2_1rqrv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whp10"]
+size = Vector2(137, 91)
+
+[node name="FlourIngredient" type="RigidBody2D" unique_id=725578341 groups=["Ingredients"]]
+mass = 5.0
+gravity_scale = 5.505
+continuous_cd = 1
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_1rqrv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=630760412]
+position = Vector2(-3, 4)
+scale = Vector2(0.06770382, 0.06770382)
+texture = ExtResource("2_1rqrv")
+region_enabled = true
+region_rect = Rect2(608, 648, 2120, 1856)
+
+[node name="Button" type="Button" parent="." unique_id=982790656]
+modulate = Color(1, 1, 1, 0)
+offset_left = -23.0
+offset_top = -17.0
+offset_right = -15.0
+offset_bottom = -9.0
+scale = Vector2(5.491187, 5.6639194)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1377740881]
+position = Vector2(-0.5, 12.5)
+shape = SubResource("RectangleShape2D_whp10")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

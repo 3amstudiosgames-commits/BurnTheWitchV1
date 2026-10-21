@@ -13,8 +13,8 @@ const RECIPES: Dictionary={
 ["BlueberryIngredient","MilkIngredient"]: "Blueberry Milkshake",
 ["StrawberryIngredient","MilkIngredient"]:"Strawberry Milkshake", 
 ["AppleIngredient","MilkIngredient"]: "Apple Milkshake",
-["BloodyIngredient","EyeIngredient","MilkIngredient"]: "Bloodshot Eye Milkshake",
-["SugarIngredient","MilkIngredient"]: "Basic Milkshake",
+["EyeIngredient","MilkIngredient"]: "Bloodshot Eye Milkshake",
+["FishIngredient","MilkIngredient"]: "Fish Milkshake",
 ["DogTreatIngredient","MilkIngredient"]: "Biscuit Milkshake",
 #All Cakes (6)
 ["ButterIngredient", "MilkIngredient","FlourIngredient", "EggIngredient","CarrotIngredient"]: "Carrot Cake",
