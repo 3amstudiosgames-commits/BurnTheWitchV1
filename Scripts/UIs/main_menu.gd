@@ -13,17 +13,14 @@ func _ready() -> void:
 	settings.visible = false
 
 func _on_start_game_pressed() -> void:
-	print("Start Pressed")
 	SceneTransition._transition_to_scene(SceneManager.kitchen)
 
 
 func _on_settings_pressed() -> void:
-	print("Settings Pressed")
 	main_buttons.visible = false
 	settings.visible = true
 
 func _on_quit_pressed() -> void:
-	print("Quit Pressed")
 	get_tree().quit()
 
 func _on_back_settings_pressed() -> void:

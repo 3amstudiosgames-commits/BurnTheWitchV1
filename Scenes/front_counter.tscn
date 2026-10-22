@@ -27,14 +27,5 @@ offset_bottom = 624.0
 text = "Kitchen"
 
 [node name="PauseMenu" parent="." unique_id=1733997507 instance=ExtResource("3_siu5d")]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 576.0
-offset_top = 352.0
-offset_right = 576.0
-offset_bottom = 352.0
 
 [connection signal="pressed" from="ToKitchenButton" to="." method="_on_kitchen_button_pressed"]

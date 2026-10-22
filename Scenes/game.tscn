@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://k0aj3bsu7o33" path="res://Scenes/Foods/strawberry_ingredient.tscn" id="10_1phco"]
 [ext_resource type="PackedScene" uid="uid://cyqoete64hk4p" path="res://Scenes/Foods/tofu_ingredient.tscn" id="10_ldgsr"]
 [ext_resource type="PackedScene" uid="uid://bbkp0jvrw605q" path="res://Scenes/Cookware/window.tscn" id="11_1phco"]
-[ext_resource type="Texture2D" uid="uid://vofh8ufo6dhq" path="res://Assets/UIs/Icons/BookClosed.png" id="12_rfjv2"]
+[ext_resource type="Texture2D" uid="uid://clupeeumdujh3" path="res://Assets/UIs/Icons/BookClosed.png" id="12_rfjv2"]
 [ext_resource type="PackedScene" uid="uid://l5es74krredl" path="res://Scenes/Foods/bluebery_ingredient.tscn" id="14_1phco"]
 [ext_resource type="PackedScene" uid="uid://bhpxfq1fynrua" path="res://Scenes/Foods/dog_treat_ingredient.tscn" id="15_nb51f"]
 [ext_resource type="PackedScene" uid="uid://8pmfnrfk7r68" path="res://Scenes/Foods/fish_ingredient.tscn" id="16_nnt18"]
@@ -103,10 +103,10 @@ scale = Vector2(0.10990393, 0.10990393)
 texture_normal = ExtResource("12_rfjv2")
 
 [node name="ToCounterButton" type="Button" parent="." unique_id=5600741]
-offset_left = 24.0
-offset_top = 560.0
-offset_right = 176.0
-offset_bottom = 616.0
+offset_left = 16.0
+offset_top = 568.0
+offset_right = 168.0
+offset_bottom = 624.0
 text = "Counter"
 
 [node name="MoneyAmount" parent="." unique_id=286425449 instance=ExtResource("18_85qyi")]

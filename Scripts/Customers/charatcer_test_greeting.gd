@@ -67,3 +67,9 @@ func _on_customer_hitbox_entered(body: Node2D) -> void:
 			food_recieved.pop_back()
 			print(food_recieved)
 			Dialogic.start("order_wrong")
+
+
+func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if Input.is_action_just_pressed("click"):
+		Dialogic.start("restate_order")
+		await Dialogic.timeline_ended

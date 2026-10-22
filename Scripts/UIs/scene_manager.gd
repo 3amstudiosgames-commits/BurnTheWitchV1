@@ -9,6 +9,7 @@ extends Node2D
 
 var ui_layer: CanvasLayer 
 
+
 func _ready() -> void:
 	ui_layer = CanvasLayer.new()
 	add_child(ui_layer)
@@ -22,3 +23,12 @@ func switch_scene(new_scene_name: Node) -> void:
 	current_scene = new_scene_name
 	
 	ui_layer.add_child(current_scene)
+
+func add_scene(new_scene_name: Node) -> void:
+	current_scene = new_scene_name
+	ui_layer.add_child(current_scene)
+
+
+func remove_scene(new_scene_name: Node) -> void:
+	current_scene = new_scene_name
+	ui_layer.remove_child(current_scene)
