@@ -2,7 +2,7 @@ extends Node2D
 
 var in_tween: Tween
 var food_recieved: Array=[]
-var order_range = randi_range(1,2)
+var order_range = randi_range(1,1)
 
 @onready var sprite_2d: Sprite2D = %Sprite2D
 @onready var collision_shape_2d: CollisionShape2D = %CollisionShape2D
@@ -15,7 +15,8 @@ var order_range = randi_range(1,2)
 func _ready() -> void:
 	#gets a random order, 1 to x items
 	for i in range(order_range):
-		Global.order.append(Global.completed_recipes.pick_random())
+		#Global.order.append(Global.completed_recipes.pick_random())
+		Global.order.append("Strawberry Milkshake")
 		print(Global.order)
 	
 	await _in_tween()
@@ -50,7 +51,8 @@ func _out_tween():
 	in_tween.tween_property(collision_shape_2d, "position", out_marker_2d.position, 1.2)
 
 
-func _on_customer_hitbox_entered(body: Node2D) -> void:
+func _on_customer_hitbox_entered(body: RigidBody2D) -> void:
+	print(body.name)
 	if body.name in Global.completed_recipes:
 		food_recieved.append(str(body.name))
 		food_recieved.sort()

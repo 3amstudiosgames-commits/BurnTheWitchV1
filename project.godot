@@ -94,6 +94,7 @@ enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/godo
 
 dropable=""
 Ingredients=""
+completed_recipes=""
 
 [input]
 
