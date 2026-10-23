@@ -2,10 +2,14 @@
 
 [ext_resource type="Script" uid="uid://b0w3gadjmty3v" path="res://Scripts/UIs/front_counter.gd" id="1_yagsu"]
 [ext_resource type="PackedScene" uid="uid://41bcqtsb28kt" path="res://Scenes/UIs/pause_menu.tscn" id="3_siu5d"]
+[ext_resource type="PackedScene" uid="uid://bd47wnhfv6ibu" path="res://Scenes/Foods/strawberry_milkshake.tscn" id="4_amrkp"]
 [ext_resource type="PackedScene" uid="uid://cx0cn502uvolg" path="res://Scenes/Customers/customer_base.tscn" id="4_f001j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfn2y"]
-size = Vector2(1153, 66)
+size = Vector2(1153, 73)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdo8n"]
+size = Vector2(383.0482, 0.20006227)
 
 [node name="front_counter" type="Node2D" unique_id=1019976497]
 script = ExtResource("1_yagsu")
@@ -14,8 +18,16 @@ script = ExtResource("1_yagsu")
 position = Vector2(0, 216)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Counter" unique_id=665986723]
-position = Vector2(576, 296)
+position = Vector2(576, 299.5)
 shape = SubResource("RectangleShape2D_rfn2y")
+
+[node name="Tray" type="StaticBody2D" parent="." unique_id=690687497]
+position = Vector2(232, 144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tray" unique_id=2103819155]
+position = Vector2(136, 317.91858)
+scale = Vector2(0.5088435, 59.16744)
+shape = SubResource("RectangleShape2D_sdo8n")
 
 [node name="CustomerBase" parent="." unique_id=1801528613 instance=ExtResource("4_f001j")]
 
@@ -27,5 +39,8 @@ offset_bottom = 624.0
 text = "Kitchen"
 
 [node name="PauseMenu" parent="." unique_id=1733997507 instance=ExtResource("3_siu5d")]
+
+[node name="StrawberryMilkshake" parent="." unique_id=725578341 instance=ExtResource("4_amrkp")]
+position = Vector2(160, 312)
 
 [connection signal="pressed" from="ToKitchenButton" to="." method="_on_kitchen_button_pressed"]
