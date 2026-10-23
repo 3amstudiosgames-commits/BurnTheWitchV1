@@ -73,10 +73,12 @@ text = "???"
 horizontal_alignment = 1
 
 [node name="MilkShakeBloodshoteye" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=515250677]
+custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_og7og")
+stretch_mode = 0
 
 [node name="MilkShakeBasic" type="TextureButton" parent="ScrollContainer/Recipe" unique_id=1112734577]
 custom_maximum_size = Vector2(128, 128)

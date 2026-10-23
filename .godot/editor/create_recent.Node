@@ -1,8 +1,10 @@
-RigidBody2D
+TextureButton
+GridContainer
+Label
+Panel
+CanvasLayer
 CollisionShape2D
 CollisionPolygon2D
-Marker2D
-CanvasLayer
 Sprite2D
 StaticBody2D
 AnimatedSprite2D
@@ -10,5 +12,3 @@ Button
 AnimationPlayer
 ColorRect
 Area2D
-TextureButton
-TextureRect

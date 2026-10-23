@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bhpxfq1fynrua" path="res://Scenes/Foods/dog_treat_ingredient.tscn" id="15_nb51f"]
 [ext_resource type="PackedScene" uid="uid://8pmfnrfk7r68" path="res://Scenes/Foods/fish_ingredient.tscn" id="16_nnt18"]
 [ext_resource type="PackedScene" uid="uid://cipa5jrkgcw2t" path="res://Scenes/Foods/eye_ingredient.tscn" id="17_ewbju"]
+[ext_resource type="PackedScene" uid="uid://b7abcw30b5pf5" path="res://Scenes/UIs/money_amount.tscn" id="18_85qyi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m01v1"]
 size = Vector2(20, 28.8596)
@@ -107,6 +108,8 @@ offset_top = 568.0
 offset_right = 168.0
 offset_bottom = 624.0
 text = "Counter"
+
+[node name="MoneyAmount" parent="." unique_id=286425449 instance=ExtResource("18_85qyi")]
 
 [connection signal="pressed" from="RecipeMenuButton" to="." method="_on_recipe_menu_button_pressed"]
 [connection signal="pressed" from="ToCounterButton" to="." method="_on_to_counter_button_pressed"]
