@@ -1,9 +1,0 @@
-res://Scenes/front_counter.tscn
-res://Dialogic/Styles/text_bubble_style.tres
-res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/speech_bubble.gdshader
-res://Scenes/Foods/strawberry_milkshake.tscn
-res://Scripts/Foods/completed_recipes.gd
-res://Scenes/Foods/strawberry_milkshake.gd
-res://Scenes/game.tscn
-res://Scenes/Customers/customer_base.tscn
-res://Scripts/Customers/charatcer_test_greeting.gd
