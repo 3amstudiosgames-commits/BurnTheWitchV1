@@ -2,7 +2,7 @@ extends Node2D
 
 var in_tween: Tween
 var food_recieved: Array=[]
-var order_range = randi_range(1,1)
+var order_range = randi_range(1,2)
 
 @onready var sprite_2d: Sprite2D = %Sprite2D
 @onready var collision_shape_2d: CollisionShape2D = %CollisionShape2D
@@ -10,19 +10,27 @@ var order_range = randi_range(1,1)
 @onready var out_marker_2d: Marker2D = %OutMarker2D
 @onready var speech_bubble_marker_2d: Marker2D = %SpeechBubbleMarker2D
 
+@onready var customer_base: Node2D = $"."
 
 
 func _ready() -> void:
-	#gets a random order, 1 to x items
-	for i in range(order_range):
-		#Global.order.append(Global.completed_recipes.pick_random())
-		Global.order.append("Strawberry Milkshake")
-		print(Global.order)
-	
-	await _in_tween()
-	await _inital_timeline()
+	_spawn_customer()
 
 
+
+func _spawn_customer() -> void:
+	Global.order.clear()
+	food_recieved.clear()
+	if Global.line_spot_1_occupied == false:
+		#gets a random order, 1 to x items
+		print("Spawned customer")
+		for i in range(order_range):
+			Global.order.append(Global.completed_recipes.pick_random())
+			print("Order is:", Global.order)
+		
+		await _in_tween()
+		await _inital_timeline()
+		Global.line_spot_1_occupied = true
 
 func _inital_timeline():
 	#Dialogic
@@ -36,12 +44,12 @@ func _inital_timeline():
 func _in_tween():
 	#in tween
 	if Global.line_spot_1_occupied == false:
-		Global.line_spot_1_occupied = true
 		if in_tween: in_tween.kill() #if tween exists kill it
 		in_tween = create_tween().set_parallel(true)
 		in_tween.tween_property(sprite_2d, "position", line_spot_1.position, 1.0)
 		in_tween.tween_property(collision_shape_2d, "position", line_spot_1.position, 1.0)
 		await in_tween.finished
+		
 
 func _out_tween():
 	#out tween
@@ -49,26 +57,35 @@ func _out_tween():
 	in_tween = create_tween().set_parallel(true)
 	in_tween.tween_property(sprite_2d, "position", out_marker_2d.position, 1.2)
 	in_tween.tween_property(collision_shape_2d, "position", out_marker_2d.position, 1.2)
+	
+	await in_tween.finished
+	
+	Global.line_spot_1_occupied = false
+	customer_base.position = Vector2(0,0)
+	_spawn_customer()
 
 
 func _on_customer_hitbox_entered(body: RigidBody2D) -> void:
-	print(body.name)
-	if body.name in Global.completed_recipes:
-		food_recieved.append(str(body.name))
-		food_recieved.sort()
-		Global.order.sort()
-		body.queue_free()
-		print(food_recieved)
+	print("Customer hitbox entered: ", body.get_recipe_name())
+	
+	if body.has_method("get_recipe_name"):
+		if body.get_recipe_name() in Global.completed_recipes:
+			if body.get_recipe_name() in Global.order:
+				food_recieved.append(str(body.get_recipe_name()))
+				food_recieved.sort()
+				Global.order.sort()
+				print(food_recieved)
 
-		if food_recieved == Global.order:
-			Dialogic.start("order_right")
-			await Dialogic.timeline_ended
-			_out_tween()
+				if food_recieved == Global.order:
+					body.queue_free()
+					Dialogic.start("order_right")
+					await Dialogic.timeline_ended
+					_out_tween()
 
-		elif body.name not in Global.order:
-			food_recieved.pop_back()
-			print(food_recieved)
-			Dialogic.start("order_wrong")
+			elif body.get_recipe_name() not in Global.order:
+				food_recieved.pop_back()
+				print(food_recieved, Global.order)
+				Dialogic.start("order_wrong")
 
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:

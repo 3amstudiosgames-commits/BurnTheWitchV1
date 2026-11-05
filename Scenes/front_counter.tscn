@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://b5h8xqh5ax7tx"]
 
 [ext_resource type="Script" uid="uid://b0w3gadjmty3v" path="res://Scripts/UIs/front_counter.gd" id="1_yagsu"]
+[ext_resource type="Texture2D" uid="uid://b386mmqq386ug" path="res://Assets/Scenes/front_counter.png" id="2_amrkp"]
 [ext_resource type="PackedScene" uid="uid://41bcqtsb28kt" path="res://Scenes/UIs/pause_menu.tscn" id="3_siu5d"]
-[ext_resource type="PackedScene" uid="uid://bd47wnhfv6ibu" path="res://Scenes/Foods/strawberry_milkshake.tscn" id="4_amrkp"]
+[ext_resource type="PackedScene" uid="uid://bd47wnhfv6ibu" path="res://Scenes/Completed Recipes/strawberry_milkshake.tscn" id="4_amrkp"]
 [ext_resource type="PackedScene" uid="uid://cx0cn502uvolg" path="res://Scenes/Customers/customer_base.tscn" id="4_f001j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfn2y"]
@@ -13,6 +14,11 @@ size = Vector2(383.0482, 0.20006227)
 
 [node name="front_counter" type="Node2D" unique_id=1019976497]
 script = ExtResource("1_yagsu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=294164837]
+visible = false
+position = Vector2(576, 320)
+texture = ExtResource("2_amrkp")
 
 [node name="Counter" type="StaticBody2D" parent="." unique_id=850165918]
 position = Vector2(0, 216)
@@ -40,7 +46,7 @@ text = "Kitchen"
 
 [node name="PauseMenu" parent="." unique_id=1733997507 instance=ExtResource("3_siu5d")]
 
-[node name="StrawberryMilkshake" parent="." unique_id=725578341 instance=ExtResource("4_amrkp")]
-position = Vector2(160, 312)
+[node name="Strawberry Milkshake" parent="." unique_id=1858936123 instance=ExtResource("4_amrkp")]
+position = Vector2(136, 352)
 
 [connection signal="pressed" from="ToKitchenButton" to="." method="_on_kitchen_button_pressed"]

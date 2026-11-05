@@ -33,7 +33,8 @@ MoneyAmount="*uid://3qeqw4qs2ekt"
 [dialogic]
 
 directories/dch_directory={
-"Characters/character_test": "res://Dialogic/Characters/character_test.dch"
+"Characters/character_test": "res://Dialogic/Characters/character_test.dch",
+"kitsune": "res://Dialogic/Characters/kitsune.dch"
 }
 directories/dtl_directory={
 "customer_order": "res://Dialogic/Timelines/customer_order.dtl",

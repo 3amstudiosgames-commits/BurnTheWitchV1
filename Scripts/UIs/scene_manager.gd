@@ -32,3 +32,23 @@ func add_scene(new_scene_name: Node) -> void:
 func remove_scene(new_scene_name: Node) -> void:
 	current_scene = new_scene_name
 	ui_layer.remove_child(current_scene)
+
+func add_recipe(recipe_name: PackedScene) -> void:
+	var unpacked_scene = recipe_name.instantiate()
+	front_counter.add_child(unpacked_scene)
+	unpacked_scene.global_position = Vector2(425,380)
+
+
+#when you cook a valid recipe add in the corresponding child node scene
+func add_recipe_to_scene(scene_name: String):
+	#Corresponds the string name to its tscn file
+	if Global.completed_recipe_scenes[scene_name]:
+		if Global.completed_recipe_scenes[scene_name] != "":
+			var scene_file = load(Global.completed_recipe_scenes[scene_name])
+			SceneManager.add_recipe(scene_file)
+			print("Spawned ", scene_name)
+	
+		else:
+			print("No scene file for recipe")
+	else:
+		print("Invalid key name")

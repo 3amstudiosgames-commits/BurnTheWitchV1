@@ -1,3 +1,4 @@
+Sprite2D
 TextureButton
 GridContainer
 Label
@@ -5,7 +6,6 @@ Panel
 CanvasLayer
 CollisionShape2D
 CollisionPolygon2D
-Sprite2D
 StaticBody2D
 AnimatedSprite2D
 Button

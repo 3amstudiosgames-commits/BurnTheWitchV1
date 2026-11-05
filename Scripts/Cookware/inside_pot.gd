@@ -68,6 +68,10 @@ func _on_timer_timeout() -> void:
 	if result != "No food":
 		if pop_up_recipe.has_method("display_recipe"):
 			pop_up_recipe.display_recipe(result)
+			
+			#Spawn recipe in front_counter
+			SceneManager.add_recipe_to_scene(result)
+			
 		else:
 			pop_up_recipe.show()
 			
