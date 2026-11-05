@@ -1,19 +1,20 @@
-[gd_scene format=3 uid="uid://bd47wnhfv6ibu"]
+[gd_scene format=3 uid="uid://b5r6yttd6rh7x"]
 
-[ext_resource type="Script" uid="uid://broxnvhhs65ys" path="res://Scenes/Foods/strawberry_milkshake.gd" id="1_l4mwp"]
-[ext_resource type="Texture2D" uid="uid://c3hsfpuxrh68a" path="res://Assets/Foods/StrawberryMilkshake.png" id="1_v5vwa"]
+[ext_resource type="Script" uid="uid://ceue2j52dvlb1" path="res://Scripts/Completed Recipes/apple_milkshake.gd" id="1_0d08w"]
+[ext_resource type="Texture2D" uid="uid://cmqjhgybcyyh4" path="res://Assets/Foods/AppleMilkshake.png" id="2_0d08w"]
 
-[node name="StrawberryMilkshake" type="RigidBody2D" unique_id=1858936123 groups=["completed_recipes"]]
-gravity_scale = 5.0
+[node name="Apple Milkshake" type="RigidBody2D" unique_id=1858936123 groups=["completed_recipes"]]
+mass = 5.0
+gravity_scale = 5.05
 continuous_cd = 1
 contact_monitor = true
 max_contacts_reported = 4
-script = ExtResource("1_l4mwp")
+script = ExtResource("1_0d08w")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=630760412]
 position = Vector2(-3.8146973e-06, 8)
 scale = Vector2(0.06403363, 0.06240208)
-texture = ExtResource("1_v5vwa")
+texture = ExtResource("2_0d08w")
 region_rect = Rect2(2376, 104, 1208, 1016)
 
 [node name="Button" type="Button" parent="." unique_id=982790656]
