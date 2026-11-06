@@ -1,4 +1,5 @@
 Sprite2D
+Button
 CollisionShape2D
 StaticBody2D
 TextureButton
@@ -8,7 +9,6 @@ Panel
 CanvasLayer
 CollisionPolygon2D
 AnimatedSprite2D
-Button
 AnimationPlayer
 ColorRect
 Area2D

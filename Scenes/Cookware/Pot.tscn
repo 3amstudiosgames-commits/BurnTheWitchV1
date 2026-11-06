@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://bya346253n4ph" path="res://Assets/Cookware/shelfpot.png" id="1_yvlse"]
 [ext_resource type="Script" uid="uid://bs5nwbkiwxtum" path="res://Scripts/Cookware/inside_pot.gd" id="2_6ejhd"]
-[ext_resource type="Texture2D" uid="uid://bnlvmqeov25jm" path="res://Assets/Animations/FirePotAnimation/Fire1.png" id="3_of5tc"]
-[ext_resource type="Texture2D" uid="uid://bgwhk40bt3qi" path="res://Assets/Animations/FirePotAnimation/Fire2.png" id="4_y1xy8"]
-[ext_resource type="Texture2D" uid="uid://0bcl50rxhl67" path="res://Assets/Animations/FirePotAnimation/Fire3.png" id="5_w7cmd"]
-[ext_resource type="Texture2D" uid="uid://crl82ulcmtv8s" path="res://Assets/Animations/FirePotAnimation/Fire4.png" id="6_onf6k"]
-[ext_resource type="Texture2D" uid="uid://cjcwrtukoplc6" path="res://Assets/Animations/FirePotAnimation/Fire5.png" id="7_a75o0"]
+[ext_resource type="Texture2D" uid="uid://ceiap8tn4u76f" path="res://Assets/Animations/FirePotAnimation/Fire1.png" id="3_of5tc"]
+[ext_resource type="Texture2D" uid="uid://sjf3syw1dyq8" path="res://Assets/Animations/FirePotAnimation/Fire2.png" id="4_y1xy8"]
+[ext_resource type="Texture2D" uid="uid://ds404vs1uu3xj" path="res://Assets/Animations/FirePotAnimation/Fire3.png" id="5_w7cmd"]
+[ext_resource type="Texture2D" uid="uid://dy7r111hfob3t" path="res://Assets/Animations/FirePotAnimation/Fire4.png" id="6_onf6k"]
+[ext_resource type="Texture2D" uid="uid://dyleq1fkfr5d7" path="res://Assets/Animations/FirePotAnimation/Fire5.png" id="7_a75o0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hoys4"]
 size = Vector2(91.5, 466.5)
@@ -72,6 +72,7 @@ debug_color = Color(0.920389, 0.259906, 0.281996, 0.42)
 one_shot = true
 
 [node name="Button" type="Button" parent="." unique_id=1689013858]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = -247.99998
 offset_top = -240.0
 offset_right = -134.99998

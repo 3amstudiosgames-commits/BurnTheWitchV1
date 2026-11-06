@@ -1,7 +1,51 @@
 [gd_scene format=3 uid="uid://dx75xyf8o71ua"]
 
+[ext_resource type="Texture2D" uid="uid://b53auvo3jk1uc" path="res://Assets/Cookware/Fridge.png" id="1_8wli0"]
+[ext_resource type="Script" uid="uid://b0qxl6blrfgio" path="res://Scripts/Cookware/fridge.gd" id="1_itgcf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_of5tc"]
+size = Vector2(144, 192)
+
 [node name="Fridge" type="StaticBody2D" unique_id=2137048956]
+script = ExtResource("1_itgcf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=707502768]
+scale = Vector2(0.10696372, 0.10696372)
+texture = ExtResource("1_8wli0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=128352268]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_of5tc")
+
+[node name="Button" type="Button" parent="." unique_id=1724324981]
+offset_left = -30.000004
+offset_top = -3.0
+offset_right = -22.000004
+offset_bottom = 5.0
+scale = Vector2(4.9402094, 3.431128)
+
+[node name="Button2" type="Button" parent="." unique_id=375070689]
+offset_left = -38.000004
+offset_top = -50.999996
+offset_right = -30.000004
+offset_bottom = -42.999996
+scale = Vector2(4.9402094, 3.431128)
+
+[node name="Button3" type="Button" parent="." unique_id=1524298455]
+offset_left = 10.000001
+offset_top = -51.0
+offset_right = 18.0
+offset_bottom = -43.0
+scale = Vector2(4.9402094, 3.431128)
+
+[node name="Button4" type="Button" parent="." unique_id=1568347037]
+offset_left = -45.999996
+offset_top = 47.0
+offset_right = -37.999996
+offset_bottom = 55.0
+scale = Vector2(3.462861, 5.381904)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
