@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://lwugrxin8ymn"]
+
+[node name="save_stats" type="Control" unique_id=62410643]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="days_var(1)" type="Panel" parent="." unique_id=262547120]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="days_passed" type="Label" parent="days_var(1)" unique_id=130885590]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Days"
+
+[node name="text1" type="RichTextLabel" parent="days_var(1)" unique_id=524939632]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="score_var(2)" type="Panel" parent="." unique_id=1500010023]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 128.0
+offset_bottom = 64.0
+
+[node name="score" type="Label" parent="score_var(2)" unique_id=459838702]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Score"
+
+[node name="text2" type="RichTextLabel" parent="score_var(2)" unique_id=22745476]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
