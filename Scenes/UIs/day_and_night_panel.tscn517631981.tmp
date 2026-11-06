@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://b6cma1n8sqrma"]
+
+[ext_resource type="Script" uid="uid://bf4x5e87cllxk" path="res://Scenes/UIs/day_and_night_panel.gd" id="1_gt808"]
+
+[node name="DayAndNightPanel" type="Control" unique_id=164352154]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gt808")
+
+[node name="DayPanel" type="PanelContainer" parent="." unique_id=769360111]
+layout_mode = 0
+offset_top = 48.0
+offset_right = 64.0
+offset_bottom = 88.0
+
+[node name="MarginContainer" type="MarginContainer" parent="DayPanel" unique_id=649165964]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="DayLabel" type="Label" parent="DayPanel/MarginContainer" unique_id=74765224]
+layout_mode = 2
+text = "Day 0"
+
+[node name="TimePanel" type="PanelContainer" parent="." unique_id=1265291594]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 48.0
+offset_right = 136.0
+offset_bottom = 88.0
+
+[node name="MarginContainer" type="MarginContainer" parent="TimePanel" unique_id=1215213208]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TimeLabel" type="Label" parent="TimePanel/MarginContainer" unique_id=1049220333]
+layout_mode = 2
+text = "00:00"
+
+[node name="Score" type="PanelContainer" parent="." unique_id=1633921146]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 136.0
+offset_bottom = 136.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Score" unique_id=213780967]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="Score/MarginContainer" unique_id=207303343]
+layout_mode = 2
+text = "Score  180"
+
+[node name="MoneyPanel" type="PanelContainer" parent="." unique_id=1758518666]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="MoneyPanel" unique_id=1054573536]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="MoneyPanel/MarginContainer" unique_id=241418220]
+layout_mode = 2
+text = "Cash 500"
