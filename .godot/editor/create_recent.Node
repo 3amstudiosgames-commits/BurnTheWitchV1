@@ -1,14 +1,14 @@
 Sprite2D
+Button
+CollisionShape2D
+StaticBody2D
 TextureButton
 GridContainer
 Label
 Panel
 CanvasLayer
-CollisionShape2D
 CollisionPolygon2D
-StaticBody2D
 AnimatedSprite2D
-Button
 AnimationPlayer
 ColorRect
 Area2D
