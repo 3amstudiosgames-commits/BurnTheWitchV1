@@ -35,7 +35,9 @@ SavingSystem="*uid://dyhir8pf4dtnk"
 
 directories/dch_directory={
 "Characters/character_test": "res://Dialogic/Characters/character_test.dch",
-"kitsune": "res://Dialogic/Characters/kitsune.dch"
+"cerberus": "res://Dialogic/Characters/cerberus.dch",
+"kitsune": "res://Dialogic/Characters/kitsune.dch",
+"vampire": "res://Dialogic/Characters/vampire.dch"
 }
 directories/dtl_directory={
 "customer_order": "res://Dialogic/Timelines/customer_order.dtl",
