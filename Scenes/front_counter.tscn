@@ -16,6 +16,7 @@ size = Vector2(383.0482, 0.20006227)
 script = ExtResource("1_yagsu")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=294164837]
+visible = false
 position = Vector2(576, 320)
 texture = ExtResource("2_amrkp")
 

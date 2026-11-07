@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cc5kx47w55e0q"]
+
+[ext_resource type="Script" uid="uid://dnm47c0n0ge2m" path="res://Scripts/Customers/charatcer_test_greeting.gd" id="1_awts2"]
+[ext_resource type="Texture2D" uid="uid://chdsyndhqlmgg" path="res://Assets/Customers/Kitsune/kitsune_neutral.png" id="2_awts2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awts2"]
+size = Vector2(87.3125, 148.625)
+
+[node name="Kitsune" type="Node2D" unique_id=1913017409]
+script = ExtResource("1_awts2")
+
+[node name="customer" type="CharacterBody2D" parent="." unique_id=1172352698]
+position = Vector2(584, 864)
+scale = Vector2(1.6322873, 1.6322873)
+
+[node name="Sprite2D" type="Sprite2D" parent="customer" unique_id=847714463]
+unique_name_in_owner = true
+position = Vector2(4.000092, 24.000061)
+scale = Vector2(0.0546667, 0.0546667)
+texture = ExtResource("2_awts2")
+region_enabled = true
+region_rect = Rect2(397.61426, 394.14502, 1841.6772, 1852.2314)
+
+[node name="Area2D" type="Area2D" parent="customer/Sprite2D" unique_id=1217733872]
+position = Vector2(16.481827, -349.37122)
+scale = Vector2(16.750732, 10.718941)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="customer/Sprite2D/Area2D" unique_id=1000679760]
+unique_name_in_owner = true
+position = Vector2(0.34375, 39)
+shape = SubResource("RectangleShape2D_awts2")
+
+[node name="LineSpot1" type="Marker2D" parent="customer" unique_id=2126429348]
+unique_name_in_owner = true
+position = Vector2(-4.9010983, -303.8681)
+
+[node name="SpeechBubbleMarker2D" type="Marker2D" parent="customer/LineSpot1" unique_id=1591129972]
+unique_name_in_owner = true
+position = Vector2(36, -11)
+
+[node name="OutMarker2D" type="Marker2D" parent="customer" unique_id=66544424]
+unique_name_in_owner = true
+position = Vector2(0, 152)
+
+[connection signal="body_entered" from="customer/Sprite2D/Area2D" to="." method="_on_customer_hitbox_entered"]
+[connection signal="input_event" from="customer/Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]

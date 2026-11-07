@@ -39,10 +39,10 @@ directories/dch_directory={
 "vampire": "res://Dialogic/Characters/vampire.dch"
 }
 directories/dtl_directory={
-"customer_order": "res://Dialogic/Timelines/customer_order.dtl",
-"order_right": "res://Dialogic/Timelines/order_right.dtl",
-"order_wrong": "res://Dialogic/Timelines/order_wrong.dtl",
-"restate_order": "res://Dialogic/Timelines/restate_order.dtl"
+"customer_order": "res://Dialogic/Timelines/customer_base/customer_order.dtl",
+"order_right": "res://Dialogic/Timelines/customer_base/order_right.dtl",
+"order_wrong": "res://Dialogic/Timelines/customer_base/order_wrong.dtl",
+"restate_order": "res://Dialogic/Timelines/customer_base/restate_order.dtl"
 }
 layout/style_directory={
 "": "res://Dialogic/Styles/text_bubble_style.tres",
