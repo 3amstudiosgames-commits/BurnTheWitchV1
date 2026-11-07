@@ -10,7 +10,8 @@ size = Vector2(87.3125, 148.625)
 script = ExtResource("1_y6itq")
 
 [node name="customer" type="CharacterBody2D" parent="." unique_id=575369635]
-position = Vector2(588, -183)
+position = Vector2(584, 864)
+scale = Vector2(1.6322873, 1.6322873)
 
 [node name="Sprite2D" type="Sprite2D" parent="customer" unique_id=1180585492]
 unique_name_in_owner = true
@@ -18,9 +19,18 @@ position = Vector2(4.000092, 24.000061)
 scale = Vector2(0.0546667, 0.0546667)
 texture = ExtResource("2_1dsap")
 
+[node name="Area2D" type="Area2D" parent="customer/Sprite2D" unique_id=954108763]
+position = Vector2(-73.17236, -439.0254)
+scale = Vector2(18.292671, 18.292671)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="customer/Sprite2D/Area2D" unique_id=1830168289]
+unique_name_in_owner = true
+position = Vector2(0.34375, 39)
+shape = SubResource("RectangleShape2D_u15vf")
+
 [node name="LineSpot1" type="Marker2D" parent="customer" unique_id=644944576]
 unique_name_in_owner = true
-position = Vector2(-18, 617)
+position = Vector2(-4.9010983, -303.8681)
 
 [node name="SpeechBubbleMarker2D" type="Marker2D" parent="customer/LineSpot1" unique_id=491153965]
 unique_name_in_owner = true
@@ -28,14 +38,7 @@ position = Vector2(36, -11)
 
 [node name="OutMarker2D" type="Marker2D" parent="customer" unique_id=552366033]
 unique_name_in_owner = true
-position = Vector2(2, 1249)
+position = Vector2(0, 152)
 
-[node name="Area2D" type="Area2D" parent="customer" unique_id=954108763]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="customer/Area2D" unique_id=1830168289]
-unique_name_in_owner = true
-position = Vector2(0.34375, 39)
-shape = SubResource("RectangleShape2D_u15vf")
-
-[connection signal="body_entered" from="customer/Area2D" to="." method="_on_customer_hitbox_entered"]
-[connection signal="input_event" from="customer/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="body_entered" from="customer/Sprite2D/Area2D" to="." method="_on_customer_hitbox_entered"]
+[connection signal="input_event" from="customer/Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]

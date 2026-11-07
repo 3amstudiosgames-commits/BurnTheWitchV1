@@ -1,7 +1,8 @@
+res://Assets/Customers/Kitsune/
+res://Dialogic/Characters/
+res://Assets/Scenes/
+res://Scripts/Completed Recipes/
 res://Scripts/UIs/
-res://Scripts/
-res://Scripts/Cookware/
-res://Scenes/Cookware/
 res://Scenes/UIs/
 res://Scenes/
 res://Dialogic/TextbubbleLayer/
@@ -9,3 +10,5 @@ res://Dialogic/
 res://Dialogic/Styles/
 res://Dialogic/Timelines/
 res://Scripts/Foods/
+res://Scenes/Cookware/
+res://Scripts/Cookware/
