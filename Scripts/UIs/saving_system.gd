@@ -2,7 +2,7 @@ extends Node2D
 
 var save_path = 'user://variable.save'
 
-var variable1= 0
+var variable1= 25
 var variable2= 0
 #var variable3 = 0
  
@@ -59,7 +59,7 @@ func start_save(on_time_tick) -> void:
 func save():
 	var file = FileAccess.open(save_path, FileAccess.WRITE)
 	file.store_var(variable1)
-	file.store_var(variable1)
+	file.store_var(variable2)
 	#file.store_var(variable3)
 	
 func load_data():
